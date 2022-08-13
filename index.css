@@ -1,0 +1,229 @@
+/*SHELL*/
+@media screen {
+    html {
+        height: 100%;
+        width: 100%;
+    }
+
+    body {
+        display: flex;
+        display: webkit-flex;
+        font-family: Arial;
+        height: 100%;
+        margin: 0;
+        width: 100%;
+    }
+
+    body > header, body > footer {
+        display: flex;
+        display: webkit-flex;
+    }
+
+    body > header > section, body > footer > section {
+        width: 100%;
+    }
+
+    blocks {
+        width: 100%;
+    }
+
+    blocks, block, box, card {
+        display: flex;
+        display: webkit-flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    block > section, card > section, box > section {
+        width: 100%;
+    }
+
+    block > picture {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    flex, column, row {
+        display: flex;
+        display: webkit-flex;
+    }
+
+    column {
+        flex-direction: column;
+    }
+
+    row {
+        flex-direction: row;
+    }
+
+    form {
+        margin: 0;
+    }
+
+    form > * {
+        width: 100%;
+    }
+
+    main {
+        display: flex;
+        display: webkit-flex;
+        /* height: 100%; */
+        overflow: visible;
+        position: relative;
+    }
+
+    ico {
+        align-items: center;
+        display: flex;
+        display: webkit-flex;
+        justify-content: center;
+    }
+
+    ico:not([data-height]) {
+        height: 45px;
+    }
+
+    ico:not([data-width]) {
+        width: 45px;
+    }
+
+    iframe {
+        border: 0;
+    }
+
+    input {
+        -webkit-appearance: none;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    [type="text"], [type="password"] {
+        background: none;
+        border: unset;
+        padding: 0;
+    }
+
+    input[type="file"], input[type="submit"] {
+        display: none;
+    }
+
+    menu {
+        margin: 0;
+        padding: 0;
+    }
+
+    page, pages {
+        display: flex;
+        position: relative;
+    }
+
+    body > page, body > pages {
+        z-index: 123456789;
+    }
+
+    [placeholder]:not(input):empty:before {
+        content: attr(placeholder);
+    }
+
+    [data-hide]:not([data-active="true"]), [data-page]:not([data-active="true"]):not(.-active), [data-pages]:not([data-active="true"]):not(.-active) {
+        display: none;
+    }
+}
+
+/*ALIGN ITEMS*/
+@media screen {
+    .align-items-center {
+        align-items: center;
+    }    
+}
+
+/*BACKGROUND COLOR*/
+@media screen {
+    .background-color-ccc {
+        background-color: #ccc;
+    }
+
+    .background-color-f0 {
+        background-color: #f0f0f0;
+    }
+}
+
+/*FLEX*/
+@media screen {
+    .flex {
+        display: flex;
+        display: -webkit-flex;
+    }
+
+    .flex-1 {
+        flex: 1;
+    }
+}
+
+/*FONT SIZE*/
+@media screen {
+    .font-size-12px {
+        font-size: 12px;
+    }
+    
+    .font-size-24px {
+        font-size: 24px;
+    }
+}
+
+/*FONT WEIGHT*/
+@media screen {
+    .font-weight-bolder {
+        font-weight: bolder;
+    }
+}
+
+/*JUSTIFY CONTENT*/
+@media screen {
+    .justify-content-space-between {
+        justify-content: space-between;
+    }
+}
+
+/*LINE HEIGHT*/
+@media screen {
+    .line-height-50px {
+        line-height: 50px;
+    }
+}
+
+/*PADDING*/
+@media screen {
+    .padding-20px {
+        padding: 20px;
+    }
+
+    .padding-left-20px {
+        padding-left: 20px;
+    }
+
+    .padding-right-20px {
+        padding-right: 20px;
+    }
+}
+
+/*TEXT TRANSFORM*/
+@media screen {
+    .text-transform-uppercase {
+        text-transform: uppercase;
+    }
+}
+
+/*WIDTH*/
+@media screen {
+    .width-100pct {
+        width: 100%;
+    }
+    
+    .width-240px {
+        width: 240px;
+    }
+}

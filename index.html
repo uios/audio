@@ -3,49 +3,246 @@
         <title>Audio &#8226; uiOS</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
         <link href="index.css" rel="stylesheet">
+        <link href="cdn/css/gg.css" rel="stylesheet">
         <script src="index.js"></script>
     </head>
-    <body class="background-color-fff flex flex-direction-row" data-theme="meridiem">
+    <body class="background-color-fff flex flex-direction-row" data-theme="system">
         <boot id="boot"></boot>
-        <nav>
+        <nav class="background-color-f0 font-weight-bolder width-240px">
             <column>
-                <card>
+                <card class="line-height-50px padding-20px">
                     <section>
-                        <box>
-                            <section>
-                                <text>Home</text>
-                            </section>
-                        </box>
-                        <box>
-                            <section>
-                                <text>Search</text>
-                            </section>
-                        </box>
-                        <box>
-                            <section>
-                                <text>Library</text>
-                            </section>
+                        <box class="padding-left-20px padding-right-20px">
+                            <row>
+                                <ico>
+                                    <n class="-ggs-2 gg-music"></n>
+                                </ico>
+                                <text class="font-size-24px">Audio</text>
+                            </row>
                         </box>
                     </section>
                 </card>
-                <card>
+                <card class="line-height-50px padding-20px">
                     <section>
                         <box>
-                            <section>
+                            <row>
+                                <ico>
+                                    <n class="gg-home"></n>
+                                </ico>
                                 <text>Home</text>
-                            </section>
+                            </row>
                         </box>
                         <box>
-                            <section>
+                            <row>
+                                <ico>
+                                    <n class="gg-search"></n>
+                                </ico>
                                 <text>Search</text>
-                            </section>
+                            </row>
+                        </box>
+                        <box>
+                            <row>
+                                <ico>
+                                    <n class="-ggs-150pct gg-layout-grid"></n>
+                                </ico>
+                                <text>Library</text>
+                            </row>
+                        </box>
+                    </section>
+                </card>
+                <card class="line-height-50px padding-20px">
+                    <section>
+                        <box>
+                            <row>
+                                <ico>
+                                    <n class="gg-play-list"></n>
+                                </ico>
+                                <text>Playlists</text>
+                            </row>
+                        </box>
+                        <box>
+                            <row>
+                                <ico>
+                                    <n class="gg-heart"></n>
+                                </ico>
+                                <text>Favorites</text>
+                            </row>
                         </box>
                     </section>
                 </card>
             </column>
         </nav>
-        <main class="flex-1">
-            <page data-page="/"></page>
+        <main class="background-color-ccc flex-1">
+            <page class="width-100pct" data-active="true" data-page="/">
+                <blocks>
+                    <block>
+                        <section>
+                            <card>
+                                <header>
+                                    <box class="font-weight-bolder padding-20px">
+                                        <row class="align-items-center justify-content-space-between">
+                                            <text class="font-size-24px">Best Picks</text>
+                                            <text class="font-size-12px text-transform-uppercase">See All</text>
+                                        </row>
+                                    </box>
+                                </header>
+                                <section>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                </section>
+                            </card>
+                            <card>
+                                <header>
+                                    <box class="font-weight-bolder padding-20px">
+                                        <row class="align-items-center justify-content-space-between">
+                                            <text class="font-size-24px">New Releases</text>
+                                            <text class="font-size-12px text-transform-uppercase">See All</text>
+                                        </row>
+                                    </box>
+                                </header>
+                                <section>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                </section>
+                            </card>
+                            <card>
+                                <header>
+                                    <box class="font-weight-bolder padding-20px">
+                                        <row class="align-items-center justify-content-space-between">
+                                            <text class="font-size-24px">Top 100</text>
+                                            <text class="font-size-12px text-transform-uppercase">See All</text>
+                                        </row>
+                                    </box>
+                                </header>
+                                <section>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                    <box>
+                                        <column>
+                                            <picture></picture>
+                                            <text></text>
+                                            <text></text>
+                                        </column>
+                                    </box>
+                                </section>
+                            </card>
+                        </section>
+                    </block>
+                </blocks>
+            </page>
         </main>
     </body>
 </html>

@@ -1,0 +1,219 @@
+.-ggs-150pct {
+    --ggs: 1.5;
+}
+
+.-ggs-2 {
+    --ggs: 2;
+}
+
+@media screen {
+    .gg-heart, .gg-heart::after {
+        border: 2px solid;
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+        width: 10px;
+        height: 8px;
+        border-bottom: 0
+    }
+
+    .gg-heart {
+        box-sizing: border-box;
+        position: relative;
+        transform: translate( calc(-10px / 2 * var(--ggs,1)), calc(-6px / 2 * var(--ggs,1)) ) rotate(-45deg) scale(var(--ggs,1));
+        display: block
+    }
+
+    .gg-heart::after, .gg-heart::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute
+    }
+
+    .gg-heart::after {
+        right: -9px;
+        transform: rotate(90deg);
+        top: 5px
+    }
+
+    .gg-heart::before {
+        width: 11px;
+        height: 11px;
+        border-left: 2px solid;
+        border-bottom: 2px solid;
+        left: -2px;
+        top: 3px
+    }
+}
+
+@media screen {
+    .gg-home {
+        background: linear-gradient(to left, currentColor 5px,transparent 0) no-repeat 0 bottom/4px 2px, linear-gradient(to left, currentColor 5px,transparent 0) no-repeat right bottom/4px 2px;
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 18px;
+        height: 14px;
+        border: 2px solid;
+        border-top: 0;
+        border-bottom: 0;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-bottom: -2px
+    }
+
+    .gg-home::after, .gg-home::before {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute
+    }
+
+    .gg-home::before {
+        border-top: 2px solid;
+        border-left: 2px solid;
+        border-top-left-radius: 4px;
+        transform: rotate(45deg);
+        top: -5px;
+        border-radius: 3px;
+        width: 14px;
+        height: 14px;
+        left: 0
+    }
+
+    .gg-home::after {
+        width: 8px;
+        height: 10px;
+        border: 2px solid;
+        border-radius: 100px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: 0;
+        left: 3px;
+        bottom: 0
+    }
+}
+
+@media screen {
+    .gg-layout-grid {
+        transform: scale(var(--ggs,1))
+    }
+
+    .gg-layout-grid, .gg-layout-grid::after, .gg-layout-grid::before {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        width: 10px;
+        height: 10px
+    }
+
+    .gg-layout-grid::after, .gg-layout-grid::before {
+        content: "";
+        position: absolute;
+        height: 4px;
+        border-left: 4px solid;
+        border-right: 4px solid
+    }
+
+    .gg-layout-grid::before {
+        top: 0
+    }
+
+    .gg-layout-grid::after {
+        bottom: 0
+    }
+}
+
+@media screen {
+    .gg-music, .gg-music::after, .gg-music::before {
+        display: block;
+        box-sizing: border-box;
+        border: 2px solid
+    }
+
+    .gg-music {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        border-bottom: 0;
+        margin-top: -4px;
+        position: relative;
+        transform: skewY(-15deg) scale(var(--ggs,1));
+        width: 14px;
+        height: 16px
+    }
+
+    .gg-music::after, .gg-music::before {
+        content: "";
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        top: 9px;
+        left: -7px;
+        transform: skewY(15deg);
+        border-radius: 10px
+    }
+
+    .gg-music::after {
+        left: 5px
+    }
+}
+
+@media screen {
+    .gg-play-list {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 12px;
+        height: 6px;
+        border-top: 0 solid transparent;
+        border-bottom: 2px solid transparent;
+        box-shadow: inset 0 -2px 0, -2px 4px 0 -2px, 0 -2px 0 0
+    }
+
+    .gg-play-list::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 3px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-left: 5px solid;
+        top: 6px;
+        right: -3px
+    }
+}
+
+@media screen {
+    .gg-search {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        transform: scale(var(--ggs,1));
+        width: 16px;
+        height: 16px;
+        border: 2px solid;
+        border-radius: 100%;
+        margin-left: -4px;
+        margin-top: -4px
+    }
+
+    .gg-search::after {
+        content: "";
+        display: block;
+        box-sizing: border-box;
+        position: absolute;
+        border-radius: 3px;
+        width: 2px;
+        height: 8px;
+        background: currentColor;
+        transform: rotate(-45deg);
+        top: 10px;
+        left: 12px
+    }
+}
