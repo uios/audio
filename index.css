@@ -353,12 +353,20 @@
         margin-left: auto;
     }
 
+    .margin-left-20px {
+        margin-left: 20px;
+    }
+
+    .margin-right-20px {
+        margin-right: 20px;
+    }
+
     @media (max-width: 480px) {
-        .mobile-margin-left-10px {
+        .-mobile-margin-left-10px {
             margin-left: 10px;
         }
-        
-        .mobile-margin-right-10px {
+
+        .-mobile-margin-right-10px {
             margin-right: 10px;
         }
     }
@@ -481,6 +489,10 @@
     }
 
     @media (max-width: 768px) {
+        [data-tablet-width="calc((100% - 50px)/4)"] {
+            width: calc((100% - 50px)/4);
+        }
+        
         .-tablet-width-100pct {
             width: 100%;
         }
