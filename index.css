@@ -149,6 +149,10 @@
 
 /*BACKGROUND COLOR*/
 @media screen {
+    .background-color-000 {
+        background-color: #000;
+    }
+
     .background-color-1f {
         background-color: #1f1f1f;
     }
@@ -236,6 +240,11 @@
     .display-flex, .flex {
         display: flex;
         display: -webkit-flex;
+    }
+
+    .display-inline-flex {
+        display: inline-flex;
+        display: -webkit-inline-flex;
     }
 
     @media (max-width: 768px) {
@@ -343,6 +352,16 @@
     .margin-left-auto {
         margin-left: auto;
     }
+
+    @media (max-width: 480px) {
+        .mobile-margin-left-10px {
+            margin-left: 10px;
+        }
+        
+        .mobile-margin-right-10px {
+            margin-right: 10px;
+        }
+    }
 }
 
 /*ORDER*/
@@ -351,6 +370,13 @@
         .-tablet-order-3 {
             order: 3;
         }
+    }
+}
+
+/*OVERFLOW*/
+@media screen {
+    .overflow-y-hidden {
+        overflow-y: hidden;
     }
 }
 
@@ -374,6 +400,10 @@
 
     .padding-right-20px {
         padding-right: 20px;
+    }
+
+    .padding-top-100pct {
+        padding-top: 100%;
     }
 }
 
@@ -421,8 +451,19 @@
     }
 }
 
+/*WHITE-SPACE*/
+@media screen {
+    .white-space-nowrap {
+        white-space: nowrap;
+    }
+}
+
 /*WIDTH*/
 @media screen {
+    [data-width="calc((100% - 50px)/6)"] {
+        width: calc((100% - 50px)/6);
+    }
+
     .width-100pct {
         width: 100%;
     }
@@ -442,6 +483,12 @@
     @media (max-width: 768px) {
         .-tablet-width-100pct {
             width: 100%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        [data-mobile-width="calc((100% - 30px)/2.5)"] {
+            width: calc((100% - 30px)/2.5);
         }
     }
 }
