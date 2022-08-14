@@ -14,6 +14,12 @@
         width: 100%;
     }
 
+    @media (prefers-color-scheme: dark) {
+        body[data-theme="system"] {
+            color: #fff;
+        }
+    }
+
     body > header, body > footer {
         display: flex;
         display: webkit-flex;
@@ -81,11 +87,11 @@
     }
 
     ico:not([data-height]) {
-        height: 45px;
+        height: 50px;
     }
 
     ico:not([data-width]) {
-        width: 45px;
+        width: 50px;
     }
 
     iframe {
@@ -137,23 +143,90 @@
 @media screen {
     .align-items-center {
         align-items: center;
-    }    
+    }
 }
 
 /*BACKGROUND COLOR*/
 @media screen {
+    .background-color-1f {
+        background-color: #1f1f1f;
+    }
+
+    .background-color-2d {
+        background-color: #2d2d2d;
+    }
+
+    .background-color-333 {
+        background-color: #333;
+    }
+
     .background-color-ccc {
         background-color: #ccc;
     }
 
-    .background-color-f0 {
-        background-color: #f0f0f0;
+    .background-color-d2 {
+        background-color: #d2d2d2;
+    }
+
+    .background-color-d3d3d1 {
+        background-color: #d3d3d1;
+    }
+
+    .background-color-e0 {
+        background-color: #e0e0e0;
+    }
+
+    .background-color-fff {
+        background-color: #fff;
+    }
+
+    .background-color-ebebf508 {
+        background-color: #ebebf508;
+    }
+
+    .background-color-ebebf529 {
+        background-color: #ebebf529;
+    }
+
+    .background-none {
+        background: none;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        .-dark-background-color-1f {
+            background-color: #1f1f1f;
+        }
+
+        .-dark-background-color-2c2c2e {
+            background-color: #2c2c2e;
+        }
+    }
+}
+
+/*BORDER RADIUS*/
+@media screen {
+    .border-radius-5px {
+        border-radius: 5px;
+    }
+}
+
+/*COLOR*/
+@media screen {
+    .color-b3 {
+        color: #b3b3b3;
+    }
+}
+
+/*BOTTOM*/
+@media screen {
+    .bottom-0 {
+        bottom: 0;
     }
 }
 
 /*FLEX*/
 @media screen {
-    .flex {
+    .display-flex, .flex {
         display: flex;
         display: -webkit-flex;
     }
@@ -163,12 +236,25 @@
     }
 }
 
+/*FILTER*/
+@media screen {
+    @media (prefers-color-scheme: dark) {
+        .-dark-filter-invert-1 {
+            filter: invert(1);
+        }
+    }
+}
+
 /*FONT SIZE*/
 @media screen {
     .font-size-12px {
         font-size: 12px;
     }
-    
+
+    .font-size-13px {
+        font-size: 13px;
+    }
+
     .font-size-24px {
         font-size: 24px;
     }
@@ -183,8 +269,27 @@
 
 /*JUSTIFY CONTENT*/
 @media screen {
+    .justify-content-center {
+        justify-content: center;
+    }
+
+    .justify-content-flex-end {
+        justify-content: flex-end;
+    }
+
     .justify-content-space-between {
         justify-content: space-between;
+    }
+}
+
+/*HEIGHT*/
+@media screen {
+    .height-5px {
+        height: 5px;
+    }
+    
+    .height-50px {
+        height: 50px;
     }
 }
 
@@ -195,10 +300,33 @@
     }
 }
 
+/*MARGIN*/
+@media screen {
+    .margin-10px {
+        margin: 10px;
+    }
+
+    .margin-auto {
+        margin: auto;
+    }
+
+    .margin-left-auto {
+        margin-left: auto;
+    }
+}
+
 /*PADDING*/
 @media screen {
     .padding-20px {
         padding: 20px;
+    }
+
+    .padding-left-10px {
+        padding-left: 10px;
+    }
+
+    .padding-right-10px {
+        padding-right: 10px;
     }
 
     .padding-left-20px {
@@ -210,10 +338,32 @@
     }
 }
 
+/*POSITION*/
+@media screen {
+    .position-absolute {
+        position: absolute;
+    }
+    
+    .position-fixed {
+        position: fixed;
+    }
+    
+    .position-relative {
+        position: relative;
+    }
+}
+
 /*TEXT TRANSFORM*/
 @media screen {
     .text-transform-uppercase {
         text-transform: uppercase;
+    }
+}
+
+/*TOP*/
+@media screen {
+    .top-0 {
+        top: 0;
     }
 }
 
@@ -222,8 +372,16 @@
     .width-100pct {
         width: 100%;
     }
-    
-    .width-240px {
-        width: 240px;
+
+    .width-20px, [data-width="20px"] {
+        width: 20px;
+    }
+
+    .width-50px {
+        width: 50px;
+    }
+
+    .width-250px {
+        width: 250px;
     }
 }
