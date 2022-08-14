@@ -16,6 +16,7 @@
 
     @media (prefers-color-scheme: dark) {
         body[data-theme="system"] {
+            background-color: #1f1f1f;
             color: #fff;
         }
     }
@@ -193,11 +194,11 @@
     }
 
     @media (prefers-color-scheme: dark) {
-        .-dark-background-color-1f {
+        body[data-theme="system"] .-dark-background-color-1f {
             background-color: #1f1f1f;
         }
 
-        .-dark-background-color-2c2c2e {
+        body[data-theme="system"] .-dark-background-color-2c2c2e {
             background-color: #2c2c2e;
         }
     }
@@ -239,7 +240,7 @@
 /*FILTER*/
 @media screen {
     @media (prefers-color-scheme: dark) {
-        .-dark-filter-invert-1 {
+        body[data-theme="system"]  .-dark-filter-invert-1 {
             filter: invert(1);
         }
     }
