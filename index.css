@@ -414,7 +414,7 @@
     }
 
     @media (max-width: 768px) {
-        .-tablet-height-100pct {
+        .-tablet-height-100pct, [data-tablet-height="100%"] {
             height: 100%;
         }
     }
