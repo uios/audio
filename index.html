@@ -8,72 +8,108 @@
     </head>
     <body class="-dark-background-color-1f background-color-fff display-flex flex-direction-row flex-wrap-wrap" data-theme="system">
         <boot id="boot"></boot>
-        <nav class="-dark-tablet-background-color-2e -mobile-width-100pct -mobile-z-index-7 -tablet-height-100pct -tablet-position-fixed -tablet-transform-translateX-minus-100pct -tablet-z-index-3 background-color-ebebf508 width-250px" data-height="calc(100% - 50px)">
-            <column>
-                <card class="line-height-50px padding-20px">
-                    <section>
-                        <box class="padding-left-20px padding-right-20px">
-                            <row>
-                                <ico data-width="20px">
-                                    <n class="gg-music"></n>
-                                </ico>
-                                <text class="font-size-24px">Audio</text>
-                            </row>
-                        </box>
-                    </section>
-                </card>
-                <card class="font-weight-bolder line-height-50px padding-20px">
-                    <section>
-                        <box>
-                            <row>
-                                <ico>
-                                    <n class="gg-home"></n>
-                                </ico>
-                                <text>Home</text>
-                            </row>
-                        </box>
-                        <box>
-                            <row>
-                                <ico>
-                                    <n class="gg-search"></n>
-                                </ico>
-                                <text>Search</text>
-                            </row>
-                        </box>
-                        <box>
-                            <row>
-                                <ico>
-                                    <n class="-ggs-150pct gg-layout-grid"></n>
-                                </ico>
-                                <text>Library</text>
-                            </row>
-                        </box>
-                    </section>
-                </card>
-                <card class="line-height-50px padding-20px">
-                    <section>
-                        <box>
-                            <row>
-                                <ico>
-                                    <n class="gg-play-list"></n>
-                                </ico>
-                                <text>Playlists</text>
-                            </row>
-                        </box>
-                        <box>
-                            <row>
-                                <ico>
-                                    <n class="gg-heart"></n>
-                                </ico>
-                                <text>Favorites</text>
-                            </row>
-                        </box>
-                    </section>
-                </card>
-            </column>
-        </nav>
+        <header>
+            <block class="-dark-tablet-background-color-2c2c2e -tablet-position-fixed position-fixed width-100pct z-index-5">
+                <row>
+                    <card class="-tablet-display-none line-height-50px width-250px">
+                        <section>
+                            <box class="padding-20px padding-left-20px padding-right-20px">
+                                <row>
+                                    <ico class="padding-left-20px" data-width="20px">
+                                        <n class="gg-music"></n>
+                                    </ico>
+                                    <text class="font-size-24px padding-right-20px">Audio</text>
+                                </row>
+                            </box>
+                        </section>
+                    </card>
+                    <card class="-tablet-padding-bottom-0 -tablet-padding-left-10px -tablet-padding-right-20px -tablet-padding-top-0 background-color-2c2c2e flex-1 padding-bottom-20px padding-left-20px padding-right-20px padding-top-20px">
+                        <row class="justify-content-flex-end">
+                            <box class="-tablet-display-flex display-nothing margin-right-auto">
+                                <section>
+                                    <ico data-width="20px">
+                                        <n class="gg-menu"></n>
+                                    </ico>
+                                </section>
+                            </box>
+                            <box>
+                                <section>
+                                    <ico data-width="20px">
+                                        <n class="gg-user"></n>
+                                    </ico>
+                                </section>
+                            </box>
+                        </row>
+                    </card>
+                </row>
+            </block>
+            <nav class="-dark-tablet-background-color-2e -mobile-width-100pct -mobile-z-index-7 -tablet-height-100pct -tablet-position-fixed -tablet-transform-translateX-minus-100pct -tablet-z-index-3 background-color-ebebf508 padding-top-90px width-250px" data-height="calc(100% - 50px)">
+                <column>
+                    <card class="display-none line-height-50px padding-20px">
+                        <section>
+                            <box class="padding-left-20px padding-right-20px">
+                                <row>
+                                    <ico data-width="20px">
+                                        <n class="gg-music"></n>
+                                    </ico>
+                                    <text class="font-size-24px">Audio</text>
+                                </row>
+                            </box>
+                        </section>
+                    </card>
+                    <card class="font-weight-bolder line-height-50px padding-left-20px padding-right-20px padding-top-30px">
+                        <section>
+                            <box>
+                                <row>
+                                    <ico>
+                                        <n class="gg-home"></n>
+                                    </ico>
+                                    <text>Home</text>
+                                </row>
+                            </box>
+                            <box>
+                                <row>
+                                    <ico>
+                                        <n class="gg-search"></n>
+                                    </ico>
+                                    <text>Search</text>
+                                </row>
+                            </box>
+                            <box>
+                                <row>
+                                    <ico>
+                                        <n class="-ggs-150pct gg-layout-grid"></n>
+                                    </ico>
+                                    <text>Library</text>
+                                </row>
+                            </box>
+                        </section>
+                    </card>
+                    <card class="line-height-50px padding-20px">
+                        <section>
+                            <box>
+                                <row>
+                                    <ico>
+                                        <n class="gg-play-list"></n>
+                                    </ico>
+                                    <text>Playlists</text>
+                                </row>
+                            </box>
+                            <box>
+                                <row>
+                                    <ico>
+                                        <n class="gg-heart"></n>
+                                    </ico>
+                                    <text>Favorites</text>
+                                </row>
+                            </box>
+                        </section>
+                    </card>
+                </column>
+            </nav>
+        </header>
         <main class="-dark-background-color-2c2c2e background-color-d3d3d1 flex-1-1-1px flex-wrap-wrap overflow-x-hidden" data-height="calc(100% - 50px)">
-            <header class="-dark-tablet-background-color-2c2c2e -tablet-position-fixed position-relative width-100pct z-index-5">
+            <header class="-dark-tablet-background-color-2c2c2e -tablet-position-fixed display-none position-relative width-100pct z-index-5">
                 <card class="-tablet-padding-0 padding-20px">
                     <row class="justify-content-flex-end">
                         <box class="-tablet-display-flex display-none margin-right-auto">
@@ -95,9 +131,9 @@
             </header>
             <page class="width-100pct" data-active="true" data-page="/">
                 <blocks>
-                    <block>
+                    <block class="-tablet-padding-top-80px padding-bottom-30px padding-top-120px">
                         <section>
-                            <card class="-tablet-padding-top-80px">
+                            <card>
                                 <header>
                                     <box class="-tablet-padding-left-10px -tablet-padding-right-10px font-weight-bolder padding-left-20px padding-right-20px">
                                         <row class="align-items-center">
