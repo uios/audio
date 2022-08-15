@@ -168,6 +168,23 @@
     }
 }
 
+/*Blur*/
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    [data-backdrop-blur="10px"] {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+}
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    [data-backdrop-blur] {
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+    [data-theme="dark"] [data-backdrop-blur] {
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+}
+/*Blur*/
+
 /*BACKGROUND COLOR*/
 @media screen {
     .background-color-000 {
@@ -371,6 +388,10 @@
 
     .justify-content-flex-end {
         justify-content: flex-end;
+    }
+
+    .justify-content-space-around {
+        justify-content: space-around;
     }
 
     .justify-content-space-between {
