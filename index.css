@@ -231,6 +231,10 @@
             body[data-theme="system"] .-dark-tablet-background-color-2e {
                 background-color: #2e2e2e;
             }
+            
+            body[data-theme="system"] .-dark-tablet-background-color-2c2c2e {
+                background-color: #2e2e2e;
+            }
         }
     }
 }
@@ -268,7 +272,15 @@
         display: -webkit-inline-flex;
     }
 
+    .display-none {
+        display: none;
+    }
+
     @media (max-width: 768px) {
+        .-tablet-display-flex {
+            display: flex;
+        }
+        
         .-tablet-display-none {
             display: none;
         }
@@ -279,6 +291,24 @@
 @media screen {
     .flex-1 {
         flex: 1;
+    }
+
+    .flex-1-1-1px {
+        flex: 1 1 1px;
+    }
+}
+
+/*FLEX WRAP*/
+@media screen {
+    .flex-direction-column {
+        flex-direction: column;
+    }
+}
+
+/*FLEX WRAP*/
+@media screen {
+    .flex-wrap-wrap {
+        flex-wrap: wrap;
     }
 }
 
@@ -294,9 +324,9 @@
 /*FONT SIZE*/
 @media screen {
     .font-size-0 {
-        font-size: 0;    
+        font-size: 0;
     }
-    
+
     .font-size-12px {
         font-size: 12px;
     }
@@ -346,6 +376,10 @@
 
 /*HEIGHT*/
 @media screen {
+    [data-height="calc(100% - 50px)"] {
+        height: calc(100% - 50px);
+    }
+
     .height-5px {
         height: 5px;
     }
@@ -394,6 +428,10 @@
         margin-left: 20px;
     }
 
+    .margin-right-auto {
+        margin-right: auto;
+    }
+
     .margin-right-20px {
         margin-right: 20px;
     }
@@ -438,6 +476,10 @@
         overflow: hidden;
     }
 
+    .overflow-x-hidden {
+        overflow-x: hidden;
+    }
+
     .overflow-y-hidden {
         overflow-y: hidden;
     }
@@ -467,6 +509,32 @@
 
     .padding-top-100pct {
         padding-top: 100%;
+    }
+
+    .padding-top-100px {
+        padding-top: 100px;
+    }
+
+    .padding-left-10px {
+        padding-left: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .-tablet-padding-0 {
+            padding: 0;
+        }
+        
+        .-tablet-padding-left-10px {
+            padding-left: 10px;
+        }
+
+        .-tablet-padding-right-10px {
+            padding-right: 10px;
+        }
+
+        .-tablet-padding-top-80px {
+            padding-top: 80px;
+        }
     }
 }
 

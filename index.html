@@ -6,9 +6,9 @@
         <link href="cdn/css/gg.css" rel="stylesheet">
         <script src="index.js"></script>
     </head>
-    <body class="-dark-background-color-1f background-color-fff display-flex flex-direction-row" data-theme="system">
+    <body class="-dark-background-color-1f background-color-fff display-flex flex-direction-row flex-wrap-wrap" data-theme="system">
         <boot id="boot"></boot>
-        <nav class="-dark-tablet-background-color-2e -mobile-width-100pct -mobile-z-index-7 -tablet-height-100pct -tablet-position-fixed -tablet-transform-translateX-minus-100pct -tablet-z-index-3 background-color-ebebf508 width-250px">
+        <nav class="-dark-tablet-background-color-2e -mobile-width-100pct -mobile-z-index-7 -tablet-height-100pct -tablet-position-fixed -tablet-transform-translateX-minus-100pct -tablet-z-index-3 background-color-ebebf508 width-250px" data-height="calc(100% - 50px)">
             <column>
                 <card class="line-height-50px padding-20px">
                     <section>
@@ -72,27 +72,34 @@
                 </card>
             </column>
         </nav>
-        <main class="-dark-background-color-2c2c2e background-color-d3d3d1 flex-1">
+        <main class="-dark-background-color-2c2c2e background-color-d3d3d1 flex-1-1-1px flex-wrap-wrap overflow-x-hidden" data-height="calc(100% - 50px)">
+            <header class="-dark-tablet-background-color-2c2c2e -tablet-position-fixed position-relative width-100pct z-index-5">
+                <card class="-tablet-padding-0 padding-20px">
+                    <row class="justify-content-flex-end">
+                        <box class="-tablet-display-flex display-none margin-right-auto">
+                            <section>
+                                <ico>
+                                    <n class="gg-menu"></n>
+                                </ico>
+                            </section>
+                        </box>
+                        <box>
+                            <section>
+                                <ico>
+                                    <n class="gg-user"></n>
+                                </ico>
+                            </section>
+                        </box>
+                    </row>
+                </card>
+            </header>
             <page class="width-100pct" data-active="true" data-page="/">
-                <blocks class="padding-top-100px">
+                <blocks>
                     <block>
-                        <header>
-                            <card class="padding-20px">
-                                <row class="justify-content-flex-end">
-                                    <box>
-                                        <section>
-                                            <ico>
-                                                <n class="gg-user"></n>
-                                            </ico>
-                                        </section>
-                                    </box>
-                                </row>
-                            </card>
-                        </header>
                         <section>
-                            <card>
+                            <card class="-tablet-padding-top-80px">
                                 <header>
-                                    <box class="font-weight-bolder padding-left-20px padding-right-20px">
+                                    <box class="-tablet-padding-left-10px -tablet-padding-right-10px font-weight-bolder padding-left-20px padding-right-20px">
                                         <row class="align-items-center">
                                             <text class="font-size-18px">Best Picks</text>
                                             <ico data-width="20px">
@@ -148,7 +155,7 @@
                             </card>
                             <card>
                                 <header>
-                                    <box class="font-weight-bolder padding-20px">
+                                    <box class="-tablet-padding-left-10px -tablet-padding-right-10px font-weight-bolder padding-left-20px padding-right-20px">
                                         <row class="align-items-center">
                                             <text class="font-size-18px">New Releases</text>
                                             <ico data-width="20px">
@@ -157,54 +164,54 @@
                                         </row>
                                     </box>
                                 </header>
-                                <section>
-                                    <box>
+                                <section class="font-size-0 overflow-y-hidden white-space-nowrap">
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-right-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-right-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
                                 </section>
                             </card>
                             <card>
                                 <header>
-                                    <box class="font-weight-bolder padding-20px">
+                                    <box class="-tablet-padding-left-10px -tablet-padding-right-10px font-weight-bolder padding-left-20px padding-right-20px">
                                         <row class="align-items-center">
                                             <text class="font-size-18px">Top 100</text>
                                             <ico data-width="20px">
@@ -213,47 +220,47 @@
                                         </row>
                                     </box>
                                 </header>
-                                <section>
-                                    <box>
+                                <section class="font-size-0 overflow-y-hidden white-space-nowrap">
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
-                                    <box>
+                                    <box class="-tablet-margin-bottom-10px -tablet-margin-left-10px -tablet-margin-right-10px -tablet-margin-top-10px display-inline-flex font-size-16px margin-bottom-20px margin-left-20px margin-right-20px margin-top-20px" data-dw960px-width="calc((100% - 80px)/3)" data-hd-width="calc((100% - 100px)/4)" data-mobile-width="calc((100% - 30px)/2.5)" data-tablet-width="calc((100% - 50px)/4)" data-vga-width="calc((100% - 40px)/3)" data-width="calc((100% - 140px)/6)" data-uxga-width="calc((100% - 120px)/5)">
                                         <column>
-                                            <picture></picture>
-                                            <text></text>
-                                            <text></text>
+                                            <picture class="background-color-000 margin-bottom-5px padding-top-100pct width-100pct"></picture>
+                                            <text>Untitled</text>
+                                            <text>Artist</text>
                                         </column>
                                     </box>
                                 </section>
@@ -263,7 +270,7 @@
                 </blocks>
             </page>
         </main>
-        <footer class="background-color-ebebf529 bottom-0 position-fixed width-100pct z-index-5">
+        <footer class="background-color-ebebf529 bottom-0 position-relative width-100pct z-index-5">
             <row class="justify-content-space-between width-100pct">
                 <card class="-tablet-order-3">
                     <row>
