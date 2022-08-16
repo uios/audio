@@ -260,10 +260,14 @@
     }
 }
 
-/*BORDER BOTTOM*/
+/*BORDER*/
 @media screen {
     .border-bottom-1px-solid {
         border-bottom: 1px solid;
+    }
+    
+    .border-top-1px-solid {
+        border-top: 1px solid;
     }
 }
 
