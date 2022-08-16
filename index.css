@@ -669,6 +669,13 @@
     }
 }
 
+/*OVERFLOW*/
+@media screen {
+    .text-overflow-ellipsis {
+        text-overflow: ellipsis;
+    }
+}
+
 /*TEXT TRANSFORM*/
 @media screen {
     .text-transform-uppercase {
