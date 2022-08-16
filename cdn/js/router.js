@@ -69,7 +69,6 @@ window.rout.ed.bang = async(route)=>{
 
     if (vp) {
         var goto = window.global.domains.subdomain === "uios" ? '/audio' : '';
-        console.log(goto + vp.dataset.fetch);
         vp.innerHTML === "" && vp.dataset.fetch ? vp.innerHTML = await ajax(goto + vp.dataset.fetch) : null;
     }
 
