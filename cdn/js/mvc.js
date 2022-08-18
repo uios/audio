@@ -27,9 +27,11 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
                         const album = data.album;
                         const uid = album.uid;
 
-                        byId('album-name').textContent = album.name;
-
                         byId('album-cover').src = cdn.endpoint + "/" + uid + "/front.jpg";
+
+                        byId('album-name').textContent = album.name;
+                        
+                        byId('album-play').dataset.uid = uid;
 
                         const tracks = data.tracks;
                         if(tracks.length > 0) {

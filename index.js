@@ -8,6 +8,7 @@ window.cdn = {
 
 window.onload = ()=>{
     window.dom = {
+        audio: document.getElementById('audio'),
         body: document.body,
         boot: document.getElementById("boot")
     };
@@ -62,4 +63,15 @@ function init() {
         uri.router().then(authChange);
     }
     console.log("Initialized");
+}
+
+window.player = {};
+window.player.album = {};
+window.player.album.play = () => {
+    const target = byId('album-play'); console.log(target);
+    const uid = target.dataset.uid;
+    const source = dom.audio.find('source');
+    source.src = cdn.endpoint+'/'+uid+'/730.mp3';
+    dom.audio.load();
+    dom.audio.play();
 }
