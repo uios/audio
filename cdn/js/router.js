@@ -11,10 +11,6 @@ String.prototype.router = async function(params) {
     if (vp) {
         var goto = window.global.domains.subdomain === "uios" ? '/audio' : '';
         vp.innerHTML === "" && vp.dataset.fetch ? vp.innerHTML = await ajax(goto + vp.dataset.fetch) : null;
-        console.log({
-            route,
-            vp: vp.dataset.page
-        });
     }
 
     var go = async function(resolve, reject) {

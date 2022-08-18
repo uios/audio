@@ -1,4 +1,4 @@
-<blocks>
+<blocks class="padding-bottom-130px">
     <block class="min-height-340px padding-bottom-24px padding-left-30px padding-right-30px">
         <section class="margin-top-auto">
             <card>
@@ -13,7 +13,7 @@
                     <box>
                         <column>
                             <text class="font-weight-bolder text-transform-uppercase" placeholder="Record Type">Album</text>
-                            <text class="font-size-72px font-weight-bolder" id="album-name" placeholder="Album Name"></text>
+                            <text class="-uxga-font-size-48px font-size-72px font-weight-bolder" id="album-name" placeholder="Album Name"></text>
                             <text>
                                 <span class="font-weight-bolder" placeholder="Artists"></span>
                                 <span placeholder="&#8226;&#160;0 likes"></span>
@@ -79,30 +79,31 @@
                 </row>
             </card>
         </header>
-        <section>
-            <card class="padding-x-16px">
-                <row class="align-items-center display-grid" data-grid-template-columns="[index] 16px [first] 4fr [last] minmax(120px,1fr)">
-                    <box class="align-items-center">
-                        <section>
-                            <text>1</text>
-                        </section>
-                    </box>
-                    <box>
-                        <column>
-                            <text class="line-height-24px" placeholder="Song Title"></text>
-                            <text class="align-items-center display-flex">
-                                <span class="align-items-center background-color-ffffff99 border-radius-2px color-000 display-inline-flex font-size-9px height-16px justify-content-center width-16px">E</span>
-                                <span class="font-size-14px" placeholder="Artists"></span>
-                            </text>
-                        </column>
-                    </box>
-                    <box>
-                        <section>
-                            <text>0:00</text>
-                        </section>
-                    </box>
-                </row>
-            </card>
-        </section>
+        <section class="counter-reset" id="feed-album-tracks"></section>
     </block>
 </blocks>
+<template id="template-album-track">
+    <card class="counter-increment padding-x-16px">
+        <row class="align-items-center display-grid" data-grid-template-columns="[index] 16px [first] 4fr [last] minmax(120px,1fr)">
+            <box class="align-items-center">
+                <section>
+                    <text class="counter"></text>
+                </section>
+            </box>
+            <box>
+                <column>
+                    <text class="line-height-24px" placeholder="Song Title"></text>
+                    <text class="align-items-center display-flex">
+                        <span class="align-items-center background-color-ffffff99 border-radius-2px color-000 display-inline-flex font-size-9px height-16px justify-content-center width-16px">E</span>
+                        <span class="font-size-14px" placeholder="Artists"></span>
+                    </text>
+                </column>
+            </box>
+            <box>
+                <section>
+                    <text>0:00</text>
+                </section>
+            </box>
+        </row>
+    </card>
+</template>

@@ -9,7 +9,7 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
         var root = get[0] || gut[0];
 
         window.GET = window.GET ? GET : rout.ed.dir(dom.body.dataset.path);
-        console.log(get, gut, root, path);
+        //console.log(get, gut, root, path);
 
         var page = route.page = rout.ed.url(gut);
 
@@ -30,6 +30,20 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
                         byId('album-name').textContent = album.name;
 
                         byId('album-cover').src = cdn.endpoint + "/" + uid + "/front.jpg";
+
+                        const tracks = data.tracks;
+                        if(tracks.length > 0) {
+                            var t = 0;
+                            const feed = byId('feed-album-tracks'); console.log(feed);
+                            const template = byId('template-album-track').content;
+                            do {
+                                const track = tracks[t];
+                                var elem = template.firstElementChild.cloneNode(true);
+                                elem.find('[placeholder="Song Title"]').textContent = track.title;
+                                feed.insertAdjacentHTML('beforeend',elem.outerHTML);
+                                t++;
+                            } while(t < tracks.length)                            
+                        }
                     }
                     const b = function(error) {
                         alert(error);
