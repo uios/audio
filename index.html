@@ -220,8 +220,8 @@
                 <card class="-tablet-display-none justify-content-center margin-left-auto">
                     <row>
                         <label class="margin-10px position-relative">
-                            <span class="background-color-fff border-radius-5px bottom-0 height-5px margin-auto position-absolute top-0 width-100pct" id="volume-progressbar"></span>
-                            <input class="background-none position-relative" type="range" min="0" max="100" step="1" value="100" id="np-volume" class="volume-slider" role="progressbar">
+                            <span class="background-color-0072bb border-radius-5px bottom-0 height-5px margin-auto position-absolute top-0 width-100pct" id="volume-progressbar"></span>
+                            <input class="background-none position-relative" type="range" min="0" max="100" step="1" value="100" id="np-volume" class="volume-slider" oninput="on.input.volume(event.target)" onpropertychange="on.input.volume(event.target)" role="progressbar">
                         </label>
                     </row>
                 </card>
