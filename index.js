@@ -1,3 +1,11 @@
+window.api = {
+    endpoint: "https://api.uios.computer"
+};
+
+window.cdn = {
+    endpoint: "https://cdn.uios.computer/file/audio-uios"
+};
+
 window.onload = ()=>{
     window.dom = {
         body: document.body,
@@ -31,9 +39,12 @@ function init() {
     var url = window.location.pathname;
     if (window.global.domains.subdomain === "uios") {
         var dir = rout.ed.dir(window.location.pathname);
-        dir.splice(0,1)
+        dir.splice(0, 1)
         var url = rout.ed.url(dir);
     }
+
+    var uri = ((dom.boot.dataset.path ? dom.boot.dataset.path : url) + (window.location.search + window.location.hash));
+    console.log(uri);
 
     if (window.firebase) {
         firebase.initializeApp(auth.config);
@@ -43,9 +54,9 @@ function init() {
             }
             firebase.auth().onAuthStateChanged(onAuthStateChanged);
         };
-        (dom.boot.dataset.path ? dom.boot.dataset.path : url).router().then(load);
+        uri.router().then(load);
     } else {
-        (dom.boot.dataset.path ? dom.boot.dataset.path : url).router().then(authChange);
+        uri.router().then(authChange);
     }
     console.log("Initialized");
 }

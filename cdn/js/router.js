@@ -13,7 +13,8 @@ String.prototype.router = async function(params) {
 
             if (!pop && !["blob:"].includes(window.location.protocol)) {
                 var goto = window.global.domains.subdomain === "uios" ? '/audio' : '';
-                history.pushState(goto + route.path, '', goto + route.path);
+                const link = goto + route.path + route.search + route.hash;
+                history.pushState(link, '', link);
             }
 
             resolve(route);
@@ -36,8 +37,8 @@ window.rout.e = state=>{
     var path = rout.ed.url(arr2);
     const GOT = rout.ed.dir(path);
     const root = GOT[0];
-    const hash = state.split('#').length > 1 ? state.split('#')[1] : null;
-    const search = state.split('?').length > 1 ? state.split('?')[1].split('#')[0] : null;
+    const hash = state.split('#').length > 1 ? "#"+state.split('#')[1] : "";
+    const search = state.split('?').length > 1 ? "?"+state.split('?')[1].split('#')[0] : "";
 
     if (GOT.length > 0) {
         var n = 0;

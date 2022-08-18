@@ -2,13 +2,13 @@
     <head>
         <title>Audio &#8226;&#160;uiOS</title>
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-        <link href="index.css" rel="stylesheet">
-        <link href="cdn/css/gg.css" rel="stylesheet">
-        <script src="index.js"></script>
-        <script src="cdn/js/mvc.js"></script>
-        <script src="cdn/js/on.js"></script>
-        <script src="cdn/js/router.js"></script>
-        <script src="cdn/js/vanilla.js"></script>
+        <link href="./../../index.css" rel="stylesheet">
+        <link href="./../../cdn/css/gg.css" rel="stylesheet">
+        <script src="./../../index.js"></script>
+        <script src="./../../cdn/js/mvc.js"></script>
+        <script src="./../../cdn/js/on.js"></script>
+        <script src="./../../cdn/js/router.js"></script>
+        <script src="./../../cdn/js/vanilla.js"></script>
     </head>
     <body class="-dark-background-color-1f background-color-fff display-flex flex-direction-row flex-wrap-wrap" data-theme="system">
         <boot id="boot"></boot>
@@ -71,7 +71,7 @@
                                     <text>Home</text>
                                 </row>
                             </box>
-                            <box data-href="#/search/">
+                            <box data-href="/search/">
                                 <row>
                                     <ico>
                                         <n class="gg-search"></n>
@@ -79,7 +79,7 @@
                                     <text>Search</text>
                                 </row>
                             </box>
-                            <box data-href="#/browse/">
+                            <box data-href="/browse/">
                                 <row>
                                     <ico>
                                         <n class="-ggs-150pct gg-layout-grid"></n>
@@ -87,7 +87,7 @@
                                     <text>Browse</text>
                                 </row>
                             </box>
-                            <box data-href="#/library/">
+                            <box data-href="/library/">
                                 <row>
                                     <ico>
                                         <n class="gg-feed"></n>
@@ -123,9 +123,9 @@
         <main class="-dark-background-color-2c2c2e background-color-d3d3d1 flex-1-1-1px flex-wrap-wrap overflow-x-hidden" data-height="calc(100% - 50px)" data-tablet-height="100%">
             <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.index.html" data-page="/"></page>
             <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.album.title.html" data-page="/album/*/"></page>
+            <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.search.html" data-page="/search/"></page>
             <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.browse.html" data-page="/browse/"></page>
             <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.library.html" data-page="/library/"></page>
-            <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.search.html" data-page="/search/"></page>
         </main>
         <footer class="-tablet-position-fixed background-color-ebebf529 bottom-0 flex-direction-column position-relative width-100pct z-index-5" data-backdrop-blur="10px">
             <row class="justify-content-space-between width-100pct">
@@ -191,7 +191,7 @@
                                 <text class="font-size-11px">Home</text>
                             </column>
                         </box>
-                        <box class="height-50px justify-content-center width-50px" data-href="#/search/">
+                        <box class="height-50px justify-content-center width-50px" data-href="/search/">
                             <column class="align-items-center justify-content-center">
                                 <ico class="margin-bottom-5px" data-height="20px" data-width="20px">
                                     <n class="gg-search"></n>
@@ -199,7 +199,7 @@
                                 <text class="font-size-11px">Search</text>
                             </column>
                         </box>
-                        <box class="height-50px justify-content-center width-50px" data-href="#/browse/">
+                        <box class="height-50px justify-content-center width-50px" data-href="/browse/">
                             <column class="align-items-center justify-content-center">
                                 <ico class="margin-bottom-5px" data-height="20px" data-width="20px">
                                     <n class="-ggs-2 gg-layout-grid"></n>
@@ -207,7 +207,7 @@
                                 <text class="font-size-11px">Browse</text>
                             </column>
                         </box>
-                        <box class="height-50px justify-content-center width-50px" data-href="#/library/">
+                        <box class="height-50px justify-content-center width-50px" data-href="/library/">
                             <column class="align-items-center justify-content-center">
                                 <ico class="margin-bottom-5px" data-height="20px" data-width="20px">
                                     <n class="gg-feed"></n>
