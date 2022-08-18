@@ -1,0 +1,30 @@
+{
+    "album": {
+        "artists": ["Birdman", "Rich Homie Quan", "Young Thug"],
+        "name": "Rich Gang Tha Tour Pt. 1",
+        "shortname": "rich-gang-tha-tour-pt-1",
+        "uid": "e25a2cf4-7fc3-4af9-b2b0-5dbc0835eeb2"
+    },
+    "tracks": [
+        {"title": "Givenchy"},
+        {"title": "War Ready"},
+        {"title": "I Know It"},
+        {"title": "See You"},
+        {"title": "Beat It Up"},
+        {"title": "Flava"},
+        {"title": "730"},
+        {"title": "Hate I"},
+        {"title": "Tell Em (Lies)"},
+        {"title": "I Got"},
+        {"title": "Milk Marie"},
+        {"title": "Imma Ride"},
+        {"title": "Everything I Got"},
+        {"title": "Keep It Goin'"},
+        {"title": "Bullet"},
+        {"title": "Freestyle"},
+        {"title": "Throw Your Hood Up"},
+        {"title": "Soldier"},
+        {"title": "Pull Up"},
+        {"title": "Who's On Top"}
+    ]
+}

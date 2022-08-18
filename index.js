@@ -29,6 +29,10 @@ window.onload = ()=>{
 function init() {
     console.log("Initializing...");
 
+    window.rout.ing = function(href, GOT, n, m=GOT[n], root=GOT[0]) {
+        return m.includes("#") || (root === 'album' && n === 1);
+    }
+
     dom.body.dataset.load = "ed";
     dom.body.onclick = (event)=>on.touch.tap(event);
 
@@ -44,7 +48,6 @@ function init() {
     }
 
     var uri = ((dom.boot.dataset.path ? dom.boot.dataset.path : url) + (window.location.search + window.location.hash));
-    console.log(uri);
 
     if (window.firebase) {
         firebase.initializeApp(auth.config);

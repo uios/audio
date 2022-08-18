@@ -1,7 +1,22 @@
 String.prototype.router = async function(params) {
     var uri = this.toString();
-    var url = new URL(uri,location.origin);
-    var route = window.route = rout.e(url.pathname + url.search + url.hash);
+    
+    var url = new URL(uri,location.origin); console.log(url);
+    var route = window.route = rout.e(url.hash ? url.hash.split('#')[1] : url.pathname + url.search + url.hash);
+
+    var pages = dom.body.find('pages[data-pages="' + route.root + '"]');
+    var page = dom.body.find('page[data-page="' + route.page + '"]');
+    var vp = page ? page : pages;
+
+    if (vp) {
+        var goto = window.global.domains.subdomain === "uios" ? '/audio' : '';
+        vp.innerHTML === "" && vp.dataset.fetch ? vp.innerHTML = await ajax(goto + vp.dataset.fetch) : null;
+        console.log({
+            route,
+            vp: vp.dataset.page
+        });
+    }
+
     var go = async function(resolve, reject) {
         //console.log('String.prototype.router', route);
         if (route) {
@@ -13,11 +28,13 @@ String.prototype.router = async function(params) {
 
             if (!pop && !["blob:"].includes(window.location.protocol)) {
                 const hash = global.domains.domain === "github" ? "/#" : "";
-                var goto = window.global.domains.subdomain === "uios" ? '/audio' : '';                
-                const link = hash.length > 0 ? 
-                    goto + hash + (route.hash.length>0 ? route.hash.split('#')[1] : route.path) + route.search:
-                    goto + route.path + route.search + route.hash;
-                console.log({hash,route,link},route.hash.split('#')[1]);
+                var goto = window.global.domains.subdomain === "uios" ? '/audio' : '';
+                const link = hash.length > 0 ? goto + hash + (route.hash.length > 0 ? route.hash.split('#')[1] : route.path) + route.search : goto + route.path + route.search + route.hash;
+                console.log({
+                    hash,
+                    route,
+                    link
+                }, route.hash.split('#')[1]);
                 history.pushState(link, '', link);
             }
 
@@ -41,8 +58,8 @@ window.rout.e = state=>{
     var path = rout.ed.url(arr2);
     const GOT = rout.ed.dir(path);
     const root = GOT[0];
-    const hash = state.split('#').length > 1 ? "#"+state.split('#')[1] : "";
-    const search = state.split('?').length > 1 ? "?"+state.split('?')[1].split('#')[0] : "";
+    const hash = state.split('#').length > 1 ? "#" + state.split('#')[1] : "";
+    const search = state.split('?').length > 1 ? "?" + state.split('?')[1].split('#')[0] : "";
 
     if (GOT.length > 0) {
         var n = 0;
@@ -71,11 +88,6 @@ window.rout.ed.bang = async(route)=>{
     var pages = dom.body.find('pages[data-pages="' + route.root + '"]');
     var page = dom.body.find('page[data-page="' + route.page + '"]');
     var vp = page ? page : pages;
-
-    if (vp) {
-        var goto = window.global.domains.subdomain === "uios" ? '/audio' : '';
-        vp.innerHTML === "" && vp.dataset.fetch ? vp.innerHTML = await ajax(goto + vp.dataset.fetch) : null;
-    }
 
     $('[data-hide]').attr("data-active", true);
     $(':not(page)[data-pages]').removeAttr("data-active");

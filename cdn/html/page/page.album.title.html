@@ -1,13 +1,104 @@
 <blocks>
-    <block>
+    <block class="min-height-340px padding-bottom-24px padding-left-30px padding-right-30px">
+        <section class="margin-top-auto">
+            <card>
+                <row class="align-items-flex-end">
+                    <box class="margin-right-24px">
+                        <section>
+                            <picture class="background-color-000 display-flex">
+                                <img class="height-240px width-240px" id="album-cover">
+                            </picture>
+                        </section>
+                    </box>
+                    <box>
+                        <column>
+                            <text class="font-weight-bolder text-transform-uppercase" placeholder="Record Type">Album</text>
+                            <text class="font-size-72px font-weight-bolder" id="album-name" placeholder="Album Name"></text>
+                            <text>
+                                <span class="font-weight-bolder" placeholder="Artists"></span>
+                                <span placeholder="&#8226;&#160;0 likes"></span>
+                                <span placeholder="&#8226;&#160;0 songs,"></span>
+                                <span placeholder="0 hr 0 min"></span>
+                            </text>
+                        </column>
+                    </box>
+                </row>
+            </card>
+        </section>
+    </block>
+    <block class="padding-30px">
         <section>
             <card>
                 <row>
+                    <box class="background-color-0072bb border-radius-50pct margin-right-30px">
+                        <section>
+                            <ico>
+                                <n class="-ggs-2 gg-play-button"></n>
+                            </ico>
+                        </section>
+                    </box>
+                    <box class="margin-right-24px">
+                        <section>
+                            <ico>
+                                <n class="-ggs-2 gg-heart"></n>
+                            </ico>
+                        </section>
+                    </box>
                     <box>
                         <section>
-                            <picture class="background-color-000 display-flex">
-                                <img class="height-240px width-240px">
-                            </picture>
+                            <ico>
+                                <n class="-ggs-2 gg-more-alt"></n>
+                            </ico>
+                        </section>
+                    </box>
+                </row>
+            </card>
+        </section>
+    </block>
+    <block class="padding-30px">
+        <header>
+            <card class="border-bottom-1px-solid border-color-ffffff1a line-height-36px margin-bottom-16px padding-x-16px">
+                <row class="align-items-center display-grid" data-grid-template-columns="[index] 16px [first] 4fr [last] minmax(120px,1fr)">
+                    <box class="align-items-center">
+                        <section>
+                            <text>#</text>
+                        </section>
+                    </box>
+                    <box>
+                        <section>
+                            <text class="text-transform-uppercase">Title</text>
+                        </section>
+                    </box>
+                    <box>
+                        <section>
+                            <ico data-height="36px" data-width="36px">
+                                <n class="gg-time"></n>
+                            </ico>
+                        </section>
+                    </box>
+                </row>
+            </card>
+        </header>
+        <section>
+            <card class="padding-x-16px">
+                <row class="align-items-center display-grid" data-grid-template-columns="[index] 16px [first] 4fr [last] minmax(120px,1fr)">
+                    <box class="align-items-center">
+                        <section>
+                            <text>1</text>
+                        </section>
+                    </box>
+                    <box>
+                        <column>
+                            <text class="line-height-24px" placeholder="Song Title"></text>
+                            <text class="align-items-center display-flex">
+                                <span class="align-items-center background-color-ffffff99 border-radius-2px color-000 display-inline-flex font-size-9px height-16px justify-content-center width-16px">E</span>
+                                <span class="font-size-14px" placeholder="Artists"></span>
+                            </text>
+                        </column>
+                    </box>
+                    <box>
+                        <section>
+                            <text>0:00</text>
                         </section>
                     </box>
                 </row>

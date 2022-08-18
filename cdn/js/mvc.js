@@ -7,7 +7,7 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
         var gut = route.hash ? rout.ed.dir(route.hash.split('#')[1]) : [];
         var get = (route ? route.GOT : rout.ed.dir(dom.body.dataset.path)).concat(gut);
         var root = get[0] || gut[0];
-        
+
         window.GET = window.GET ? GET : rout.ed.dir(dom.body.dataset.path);
         console.log(get, gut, root, path);
 
@@ -17,45 +17,45 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
             if (root === "album") {
                 const album = get[1] || gut[1];
 
-                if(album) {
+                if (album) {
                     page = route.page = "/album/*/";
-                    console.log({vp,page,route,gut,album});
+
                     var vp = dom.body.find('[data-page="' + page + '"]');
+
                     const a = async function(d) {
                         const data = JSON.parse(d);
                         const album = data.album;
                         const uid = album.uid;
-                        const name = album.name;
 
-                        const cover = vp.find('picture img');
-                        cover.src = cdn.endpoint+"/"+uid+"/front.jpg";
+                        byId('album-name').textContent = album.name;
+
+                        byId('album-cover').src = cdn.endpoint + "/" + uid + "/front.jpg";
                     }
-                    const b = function (error) {
+                    const b = function(error) {
+                        alert(error);
                     }
-                    
+
                     var endpoint = global.domains.tld === "tld" ? "http://api.uios.tld" : api.endpoint;
-                    ajax(endpoint+'/v1/audio/albums/'+album).then(a).catch(b);
+                    const uri = endpoint + '/v1/audio/albums/' + album;
+                    const pre = window.global.domains.domain === "github" ? '/audio' : '';
+                    ajax(pre + "/album/" + album + "/index.json").then(a).catch(b);
                 }
                 resolve(route);
-            }
-            else if (root === "artist") {
-                console.log({route});
-                if(GET.length > 1) {                 
-                }
+            } else if (root === "artist") {
+                console.log({
+                    route
+                });
+                if (GET.length > 1) {}
                 resolve(route);
-            }
-            else if (root === "browse") {
+            } else if (root === "browse") {
                 resolve(route);
-            }
-            else if (root === "library") {
+            } else if (root === "library") {
                 resolve(route);
-            }
-            else if (root === "search") {
+            } else if (root === "search") {
                 resolve(route);
-            }
-            else {
+            } else {
                 const error = {
-                    code: 404  
+                    code: 404
                 };
                 reject(error);
             }
