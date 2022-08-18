@@ -68,6 +68,7 @@ function init() {
 window.player = {};
 window.player.album = {};
 window.player.album.play = () => {
+    alert("Play Album...");
     const target = byId('album-play'); console.log(target);
     const uid = target.dataset.uid;
     const source = dom.audio.find('source');
