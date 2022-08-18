@@ -12,8 +12,9 @@ String.prototype.router = async function(params) {
             route = window.view ? await view(route).then(rout.ed.bang(route)) : await rout.ed.bang(route);
 
             if (!pop && !["blob:"].includes(window.location.protocol)) {
+                const hash = global.domains.domain === "github" ? "/#" : "";
                 var goto = window.global.domains.subdomain === "uios" ? '/audio' : '';
-                const link = goto + route.path + route.search + route.hash;
+                const link = goto + hash + route.path + route.search + route.hash;
                 history.pushState(link, '', link);
             }
 
