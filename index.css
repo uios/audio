@@ -677,6 +677,10 @@
         padding: 20px;
     }
 
+    .padding-16px {
+        padding: 16px;
+    }
+
     .padding-30px {
         padding: 30px;
     }
@@ -768,6 +772,11 @@
     .padding-x-16px {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+    .padding-y-5px {
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
 
     @media (max-width: 768px) {
