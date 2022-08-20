@@ -127,6 +127,7 @@ window.player.album.track = target=>{
             };
             f++;
         } while (f < feed.children.length);
+        console.log(feed.find('.counter'));
     }
     console.log(card);
     const index = card.index();
@@ -176,6 +177,10 @@ window.player.on.play = event=>{
     });
     byId('player-title').textContent = track.title;
     byId('player-artists').textContent = '';
+
+    const feed = byId('feed-album-tracks');
+    $('.counter.color-0096c7').removeClass('color-0096c7');
+    $('[placeholder="Title"].color-0096c7').removeClass('color-0096c7');
 
     const playing = dom.body.find('[data-filename="' + track.filename + '"]');
     if (playing) {
