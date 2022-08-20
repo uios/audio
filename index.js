@@ -140,6 +140,17 @@ window.player.album.track = target=>{
     play.firstElementChild.classList.remove('gg-play-button');
 }
 
+window.player.controls = {};
+windoe.player.controls.prev = event => {
+    
+}
+windoe.player.controls.next = event => {
+    
+}
+window.player.controls.play = event => {
+    
+}
+
 window.player.on = {};
 window.player.on.ended = event=>{
     console.log(event);
