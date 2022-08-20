@@ -163,11 +163,11 @@ window.player.on.ended = event=>{
     window.player.queue.current === window.player.queue.current.length - 1 ? window.player.queue.current++ : window.player.queue.current = 0;
 
     const source = dom.audio.find('source');
+    const index = window.playe.queue.current;
     source.src = window.player.queue.tracks[index].source;
     dom.audio.load();
     dom.audio.play();
-
-    const index = window.player.queue.current;
+    
     const track = window.player.queue.tracks[index];
     console.log({
         index,
