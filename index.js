@@ -141,14 +141,18 @@ window.player.album.track = target=>{
 }
 
 window.player.controls = {};
-window.player.controls.prev = event => {
-    
-}
-window.player.controls.next = event => {
-    
-}
-window.player.controls.play = event => {
-    
+window.player.controls.prev = ()=>{}
+window.player.controls.next = ()=>{}
+window.player.controls.play = ()=>{
+    if (dom.audio.paused) {
+        const source = dom.audio.find('source');
+        const src = source.src;
+        if (src) {
+            dom.audio.play();
+        }
+    } else {
+        dom.audio.pause();
+    }
 }
 
 window.player.on = {};
