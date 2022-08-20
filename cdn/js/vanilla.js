@@ -46,12 +46,19 @@ Array.prototype.removeClass = function(name) {
     }
     return that;
 }
+
 Element.prototype.all = function(elem) {
     return this.querySelectorAll(elem);
 }
 Element.prototype.find = function(elem) {
     return this.querySelector(elem);
 }
+Element.prototype.index = function() {
+    var whl = this;
+    [].forEach.call(whl.parentNode.children, (a,b,c)=>(a === whl) ? whl = b : null);
+    return whl;
+}
+
 window.$ = e=>{
     var obj = e;
     if (typeof obj === 'object') {
@@ -90,6 +97,7 @@ window.is = {
         return true;
     }
 };
+
 function ajax(url, settings) {
     var dir = window.location.href.split(url);
     return new Promise((resolve,reject)=>{

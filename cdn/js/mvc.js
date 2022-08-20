@@ -41,7 +41,8 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
                             do {
                                 const track = tracks[t];
                                 var elem = template.firstElementChild.cloneNode(true);
-                                elem.find('[placeholder="Song Title"]').textContent = track.title;
+                                elem.dataset.filename = track.title;
+                                elem.find('[placeholder="Title"]').textContent = track.title;
                                 feed.insertAdjacentHTML('beforeend',elem.outerHTML);
                                 t++;
                             } while(t < tracks.length)                            

@@ -83,7 +83,7 @@
     </block>
 </blocks>
 <template id="template-album-track">
-    <card class="counter-increment padding-x-16px padding-y-5px">
+    <card class="counter-increment padding-x-16px padding-y-5px" data-tap="player.album.track(event.target)">
         <row class="align-items-center display-grid" data-grid-template-columns="[index] 16px [first] 4fr [last] minmax(120px,1fr)">
             <box class="align-items-center">
                 <section>
@@ -92,10 +92,10 @@
             </box>
             <box>
                 <column>
-                    <text class="line-height-24px" placeholder="Song Title"></text>
+                    <text class="line-height-24px" placeholder="Title"></text>
                     <text class="align-items-center display-flex">
                         <span class="align-items-center background-color-ffffff99 border-radius-2px color-000 display-inline-flex font-size-9px height-16px justify-content-center width-16px">E</span>
-                        <span class="font-size-14px" placeholder="Artists"></span>
+                        <span class="font-size-14px padding-left-10px" placeholder="Artists"></span>
                     </text>
                 </column>
             </box>

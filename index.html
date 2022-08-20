@@ -173,7 +173,7 @@
             <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.library.html" data-page="/library/"></page>
             <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.search.html" data-page="/search/"></page>
         </main>
-        <footer class="-tablet-position-fixed background-color-ebebf529 bottom-0 flex-direction-column position-relative width-100pct z-index-5" data-backdrop-blur="10px">
+        <footer class="-tablet-position-fixed background-color-ebebf529 bottom-0 flex-direction-column position-relative width-100pct z-index-5" data-backdrop-blur="10px" id="footer">
             <row class="justify-content-space-between width-100pct">
                 <card class="-tablet-order-3">
                     <row>
@@ -211,8 +211,8 @@
                         </box>
                         <box class="font-size-13px justify-content-center padding-left-10px padding-right-10px">
                             <column>
-                                <text>Untitled</text>
-                                <text>Artist</text>
+                                <text id="player-title" placeholder="Title"></text>
+                                <text id="player-artists" placeholder="Artists"></text>
                             </column>
                         </box>
                     </row>
@@ -264,7 +264,7 @@
                     </row>
                 </card>
             </row>
-            <audio id="audio">
+            <audio id="audio" onended="player.on.ended(event)" onplay="player.on.play(event)">
                 <source></source>
             </audio>
         </footer>

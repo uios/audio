@@ -10,7 +10,8 @@ window.onload = ()=>{
     window.dom = {
         audio: document.getElementById('audio'),
         body: document.body,
-        boot: document.getElementById("boot")
+        boot: document.getElementById("boot"),
+        player: document.getElementById('player')
     };
 
     var domains = window.location.host.split('.');
@@ -66,13 +67,123 @@ function init() {
 }
 
 window.player = {};
+
 window.player.album = {};
-window.player.album.play = () => {
-    alert("Play Album...");
-    const target = byId('album-play'); console.log(target);
-    const uid = target.dataset.uid;
+window.player.album.play = ()=>{
+    const target = byId('album-play');
+    console.log(target);
+    if (dom.audio.paused) {
+        const uid = target.dataset.uid;
+        const source = dom.audio.find('source');
+        const src = source.src;
+        if (src) {
+            dom.audio.play();
+        } else {
+            const feed = byId('feed-album-tracks');
+            if (feed.children.length > 0) {
+                var f = 0;
+                do {
+                    const track = feed.children[f];
+                    window.player.queue.tracks[f] = {
+                        artists: [],
+                        filename: track.dataset.filename,
+                        source: cdn.endpoint + '/' + uid + '/' + track.dataset.filename + '.mp3',
+                        title: track.find('[placeholder="Title"]').textContent
+                    };
+                    f++;
+                } while (f < feed.children.length);
+            }
+            const index = 0;
+            window.player.queue.current = index;
+            source.src = window.player.queue.tracks[index].source;
+            dom.audio.load();
+            dom.audio.play();
+        }
+        target.firstElementChild.classList.add('gg-play-pause');
+        target.firstElementChild.classList.remove('gg-play-button');
+    } else {
+        dom.audio.pause();
+        target.firstElementChild.classList.remove('gg-play-pause');
+        target.firstElementChild.classList.add('gg-play-button');
+    }
+}
+window.player.album.track = target=>{
+    const card = target.closest('card');
+    const play = byId('album-play');
+    const uid = byId('album-play').dataset.uid;
     const source = dom.audio.find('source');
-    source.src = cdn.endpoint+'/'+uid+'/730.mp3';
+    const src = source.src;
+
+    const feed = byId('feed-album-tracks');
+    if (feed.children.length > 0) {
+        var f = 0;
+        do {
+            const track = feed.children[f];
+            window.player.queue.tracks[f] = {
+                artists: [],
+                filename: track.dataset.filename,
+                source: cdn.endpoint + '/' + uid + '/' + track.dataset.filename + '.mp3',
+                title: track.find('[placeholder="Title"]').textContent
+            };
+            f++;
+        } while (f < feed.children.length);
+    }
+    console.log(card);
+    const index = card.index();
+    window.player.queue.current = index;
+    source.src = window.player.queue.tracks[index].source;
     dom.audio.load();
     dom.audio.play();
+
+    play.firstElementChild.classList.add('gg-play-pause');
+    play.firstElementChild.classList.remove('gg-play-button');
 }
+
+window.player.on = {};
+window.player.on.ended = event=>{
+    console.log(event);
+    const target = event.target;
+
+    window.player.queue.current === window.player.queue.current.length - 1 ? window.player.queue.current++ : window.player.queue.current = 0;
+
+    source.src = window.player.queue.tracks[index].source;
+    dom.audio.load();
+    dom.audio.play();
+
+    const index = window.player.queue.current;
+    const track = window.player.queue.tracks[index];
+    console.log({
+        index,
+        track
+    });
+    byId('player-title').textContent = track.title;
+    byId('player-artists').textContent = '';
+
+    const playing = dom.body.find('[data-filename="' + track.filename + '"]');
+    if (playing) {
+        playing.find('.counter').classList.add('color-0096c7');
+        playing.find('[placeholder="Title"]').classList.add('color-0096c7');
+    }
+}
+window.player.on.play = event=>{
+    console.log(event);
+    const target = event.target;
+    const index = window.player.queue.current;
+    const track = window.player.queue.tracks[index];
+    console.log({
+        index,
+        track
+    });
+    byId('player-title').textContent = track.title;
+    byId('player-artists').textContent = '';
+
+    const playing = dom.body.find('[data-filename="' + track.filename + '"]');
+    if (playing) {
+        playing.find('.counter').classList.add('color-0096c7');
+        playing.find('[placeholder="Title"]').classList.add('color-0096c7');
+    }
+}
+
+window.player.queue = {};
+window.player.queue.current = 0;
+window.player.queue.tracks = [];
