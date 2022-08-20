@@ -141,10 +141,10 @@ window.player.album.track = target=>{
 }
 
 window.player.controls = {};
-windoe.player.controls.prev = event => {
+window.player.controls.prev = event => {
     
 }
-windoe.player.controls.next = event => {
+window.player.controls.next = event => {
     
 }
 window.player.controls.play = event => {
