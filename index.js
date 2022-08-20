@@ -160,8 +160,9 @@ window.player.on.ended = event=>{
     console.log(event);
     const target = event.target;
 
-    window.player.queue.current === window.player.queue.current.length - 1 ? window.player.queue.current++ : window.player.queue.current = 0;
-
+    window.player.queue.current === window.player.queue.tracks.length - 1 ? window.player.queue.current = 0 : window.player.queue.current++;
+    console.log(window.player.queue.current);
+    
     const source = dom.audio.find('source');
     const index = window.player.queue.current;
     source.src = window.player.queue.tracks[index].source;
