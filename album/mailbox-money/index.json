@@ -1,0 +1,57 @@
+{
+    "album": {
+        "artists": [
+            "Nipsey Hussle"
+        ],
+        "name": "Mailbox Money",
+        "shortname": "mailbox-money",
+        "uid": "f5e66f1f-dc50-472a-8975-c997190b9fc1"
+    },
+    "tracks": [
+        {
+            "title": "Killa"
+        },
+        {
+            "title": "A Hunnit A Show"
+        },
+        {
+            "title": "Status Symbol"
+        },
+        {
+            "title": "That's How I Knew"
+        },
+        {
+            "title": "Count Up That Loot"
+        },
+        {
+            "title": "Only A Case"
+        },
+        {
+            "title": "Where Yo Money At"
+        },
+        {
+            "title": "Between Us"
+        },
+        {
+            "title": "Real Nigga Moves"
+        },
+        {
+            "title": "Stay Loyal"
+        },
+        {
+            "title": "A Miracle"
+        },
+        {
+            "title": "No Nigga Like Me"
+        },
+        {
+            "title": "50 Niggaz"
+        },
+        {
+            "title": "Be Here For A While"
+        },
+        {
+            "title": "Overtime"
+        }
+    ]
+}
