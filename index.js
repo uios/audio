@@ -147,8 +147,29 @@ window.player.album.track = target=>{
 }
 
 window.player.controls = {};
-window.player.controls.prev = ()=>{}
-window.player.controls.next = ()=>{}
+window.player.controls.prev = ()=>{
+    console.log(event, window.player.queue.tracks);
+    window.player.queue.current === 0 ? window.player.queue.current = window.player.queue.tracks.length-1 : window.player.queue.current--;
+    console.log(window.player.queue.current);
+
+    const source = dom.audio.find('source');
+    const index = window.player.queue.current;
+    source.src = window.player.queue.tracks[index].source;
+    dom.audio.load();
+    dom.audio.play();    
+}
+window.player.controls.next = ()=>{
+    console.log(event);
+
+    window.player.queue.current === window.player.queue.tracks.length - 1 ? window.player.queue.current = 0 : window.player.queue.current++;
+    console.log(window.player.queue.current);
+
+    const source = dom.audio.find('source');
+    const index = window.player.queue.current;
+    source.src = window.player.queue.tracks[index].source;
+    dom.audio.load();
+    dom.audio.play();
+}
 window.player.controls.play = ()=>{
     if (dom.audio.paused) {
         const source = dom.audio.find('source');
@@ -207,7 +228,7 @@ window.player.on.play = event=>{
     const feed = byId('feed-album-tracks');
     $('.counter.color-0096c7').removeClass('color-0096c7');
     $('[placeholder="Title"].color-0096c7').removeClass('color-0096c7');
-
+    
     const playing = dom.body.find('[data-filename="' + track.filename + '"]');
     if (playing) {
         playing.find('.counter').classList.add('color-0096c7');
@@ -229,6 +250,8 @@ window.player.on.play = event=>{
         };
         console.log(metadata);
         navigator.mediaSession.metadata = new MediaMetadata(metadata);
+        navigator.mediaSession.setActionHandler('previoustrack', player.controls.prev);
+        navigator.mediaSession.setActionHandler('nexttrack', player.controls.next);
     }
 
 }
