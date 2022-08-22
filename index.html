@@ -189,7 +189,7 @@
                                 <ico class="-tablet-display-none">
                                     <n class="gg-play-track-prev"></n>
                                 </ico>
-                                <ico>
+                                <ico data-tap="window.player.controls.play" id="audio-play">
                                     <n class="gg-play-button"></n>
                                 </ico>
                                 <ico class="-tablet-display-none">
@@ -264,7 +264,7 @@
                     </row>
                 </card>
             </row>
-            <audio id="audio" onended="player.on.ended(event)" onplay="player.on.play(event)">
+            <audio id="audio" onended="player.on.ended(event)" onpause="player.on.pause(event)" onplay="player.on.play(event)">
                 <source></source>
             </audio>
         </footer>

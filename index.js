@@ -189,6 +189,9 @@ window.player.on.ended = event=>{
         playing.find('[placeholder="Title"]').classList.add('color-0096c7');
     }
 }
+window.player.on.pause = event=>{
+    $(byId('audio-play').find('n')).removeClass('gg-play-pause').addClass('gg-play-button');
+}
 window.player.on.play = event=>{
     console.log(event);
     const target = event.target;
@@ -210,6 +213,8 @@ window.player.on.play = event=>{
         playing.find('.counter').classList.add('color-0096c7');
         playing.find('[placeholder="Title"]').classList.add('color-0096c7');
     }
+
+    $(byId('audio-play').find('n')).removeClass('gg-play-button').addClass('gg-play-pause');
 
     if ('mediaSession'in navigator) {
         const metadata = {
