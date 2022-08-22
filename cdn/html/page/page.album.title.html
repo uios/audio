@@ -58,8 +58,8 @@
     <block class="-mobile-padding-10px padding-30px">
         <header>
             <card class="border-bottom-1px-solid border-color-ffffff1a line-height-36px margin-bottom-16px padding-x-16px padding-y-5px">
-                <row class="align-items-center display-grid" data-grid-template-columns="[index] 16px [first] 4fr [last] minmax(120px,1fr)">
-                    <box class="align-items-center">
+                <row class="align-items-center" data-grid-templates-columns="[index] 16px [first] 4fr [last] minmax(120px,1fr)">
+                    <box class="align-items-center width-30px">
                         <section>
                             <text>#</text>
                         </section>
@@ -69,7 +69,7 @@
                             <text class="text-transform-uppercase">Title</text>
                         </section>
                     </box>
-                    <box>
+                    <box class="margin-left-auto">
                         <section>
                             <ico data-height="36px" data-width="36px">
                                 <n class="gg-time"></n>
@@ -84,8 +84,8 @@
 </blocks>
 <template id="template-album-track">
     <card class="counter-increment padding-x-16px padding-y-5px" data-tap="player.album.track(event.target)">
-        <row class="align-items-center display-grid" data-grid-template-columns="[index] 16px [first] 4fr [last] minmax(120px,1fr)">
-            <box class="align-items-center">
+        <row class="align-items-center" data-grid-template-columns="[index] 16px [first] 4fr [last] minmax(120px,1fr)">
+            <box class="align-items-center width-30px">
                 <section>
                     <text class="counter"></text>
                 </section>
@@ -99,7 +99,7 @@
                     </text>
                 </column>
             </box>
-            <box>
+            <box class="margin-left-auto">
                 <section>
                     <text>0:00</text>
                 </section>

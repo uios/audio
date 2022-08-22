@@ -247,7 +247,7 @@ window.player.on.play = event=>{
             artist: track.artist,
             album: window.player.queue.album,
             artwork: [{
-                src: cdn.endpoint + '/' + byId('album-name').dataset.uid + '/front.jpg',
+                src: cdn.endpoint + '/albums/' + byId('album-name').dataset.uid + '/front.jpg',
                 sizes: '96x96',
                 type: 'image/png'
             }]
