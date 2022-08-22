@@ -250,6 +250,9 @@ window.player.on.play = event=>{
         };
         console.log(metadata);
         navigator.mediaSession.metadata = new MediaMetadata(metadata);
+        navigator.mediaSession.setActionHandler('pause', player.controls.play);
+        navigator.mediaSession.setActionHandler('play', player.controls.play);
+        navigator.mediaSession.setActionHandler('previoustrack', player.controls.prev);
         navigator.mediaSession.setActionHandler('previoustrack', player.controls.prev);
         navigator.mediaSession.setActionHandler('nexttrack', player.controls.next);
     }
