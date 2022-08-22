@@ -29,6 +29,7 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
 
                         byId('album-cover').src = cdn.endpoint + "/" + uid + "/front.jpg";
 
+                        byId('album-name').dataset.uid = album.uid;
                         byId('album-name').textContent = album.name;
                         
                         byId('album-play').dataset.uid = uid;
@@ -43,6 +44,7 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
                                 var elem = template.firstElementChild.cloneNode(true);
                                 elem.dataset.filename = track.title;
                                 elem.find('[placeholder="Title"]').textContent = track.title;
+                                elem.find('[placeholder="Artists"]').textContent = track.artist.join(', ');
                                 feed.insertAdjacentHTML('beforeend',elem.outerHTML);
                                 t++;
                             } while(t < tracks.length)                            

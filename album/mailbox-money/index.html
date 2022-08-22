@@ -1,0 +1,291 @@
+<html>
+    <head>
+        <title>Audio &#8226;&#160;uiOS</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+        <script>
+            var domains = window.location.host.split('.');
+            window.global = {
+                domains: {
+                    domain: domains.length > 1 ? domains[domains.length - 2] : null,
+                    subdomain: domains.length > 2 ? domains[domains.length - 3] : null,
+                    tld: domains[domains.length - 1]
+                }
+            }
+            function Scripts(links) {
+                var f = 0;
+                do {
+                    var l = links[f];
+                    if (l) {
+                        var link = ``;
+                        var script = document.createElement("script");
+                        script.type = "text/javascript";
+                        if (l.link) {
+                            link += (link.includes('https:') ? `` : (link.charAt(0) !== "." && window.location.protocol === "file:" ? `.` : ``));
+                            link += l.link;
+                        } else {
+                            link += (link.includes('https:') ? `` : (link.charAt(0) !== "." && window.location.protocol === "file:" ? `.` : ``));
+                            link += l.cdn;
+                        }
+                        script.src = link;
+                        l && l.async ? script.async = true : null;
+                        document.head.appendChild(script);
+                    }
+                    f++;
+                } while (f < links.length);
+            }
+            function Styles(links) {
+                var f = 0;
+                do {
+                    var l = links[f].link;
+                    var cdn = links[f].link;
+                    var sync = links[f].async;
+                    var link = ``;
+                    link += (l.includes('https:') ? `` : (l.charAt(0) !== "." && window.location.protocol === "file:" ? `.` : ``));
+                    link += links[f].link;
+                    var sync = links[f].sync ? links[f].sync : ``;
+                    var script = ``;
+                    if (link.includes('.css')) {
+                        script = `<link rel="stylesheet" href="` + link + `" ` + sync + `>`;
+                    }
+                    if (link.includes('.js')) {
+                        script = `<script src="` + link + `" ` + sync + `>` + atob('PC9zY3JpcHQ+');
+                    }
+                    document.head.insertAdjacentHTML('beforeend', script);
+                    f++;
+                } while (f < links.length);
+            }
+        </script>
+    </head>
+    <body class="-dark-background-color-1f background-color-fff display-flex flex-direction-row flex-wrap-wrap" data-theme="system">
+        <boot id="boot"></boot>
+        <header data-height="calc(100% - 50px)" data-tablet-height="100%">
+            <block class="-dark-tablet-background-color-2c2c2e -tablet-position-fixed display-none position-fixed width-100pct z-index-5">
+                <row>
+                    <card class="-tablet-display-none line-height-50px width-250px">
+                        <section>
+                            <box class="padding-20px padding-left-20px padding-right-20px">
+                                <row>
+                                    <ico class="padding-left-20px" data-width="20px">
+                                        <n class="gg-music"></n>
+                                    </ico>
+                                    <text class="font-size-24px padding-right-20px">Audio</text>
+                                </row>
+                            </box>
+                        </section>
+                    </card>
+                    <card class="-tablet-padding-bottom-0 -tablet-padding-left-10px -tablet-padding-right-20px -tablet-padding-top-0 background-color-2c2c2e flex-1 padding-bottom-20px padding-left-20px padding-right-20px padding-top-20px">
+                        <row class="justify-content-flex-end">
+                            <box class="-tablet-display-flex display-nothing margin-right-auto">
+                                <section>
+                                    <ico data-width="20px">
+                                        <n class="gg-menu"></n>
+                                    </ico>
+                                </section>
+                            </box>
+                            <box>
+                                <section>
+                                    <ico data-width="20px">
+                                        <n class="gg-user"></n>
+                                    </ico>
+                                </section>
+                            </box>
+                        </row>
+                    </card>
+                </row>
+            </block>
+            <nav class="-dark-tablet-background-color-2e -mobile-width-100pct -mobile-z-index-7 -tablet-height-100pct -tablet-position-fixed -tablet-transform-translateX-minus-100pct -tablet-z-index-3 background-color-ebebf508 width-250px">
+                <column>
+                    <card class="line-height-50px padding-20px">
+                        <section>
+                            <box class="padding-left-20px padding-right-20px">
+                                <row>
+                                    <ico data-width="20px">
+                                        <n class="gg-music"></n>
+                                    </ico>
+                                    <text class="font-size-24px">Audio</text>
+                                </row>
+                            </box>
+                        </section>
+                    </card>
+                    <card class="line-height-50px padding-left-20px padding-right-20px padding-top-30px">
+                        <section>
+                            <box data-href="/">
+                                <row>
+                                    <ico>
+                                        <n class="gg-home"></n>
+                                    </ico>
+                                    <text>Home</text>
+                                </row>
+                            </box>
+                            <box data-href="#/search/">
+                                <row>
+                                    <ico>
+                                        <n class="gg-search"></n>
+                                    </ico>
+                                    <text>Search</text>
+                                </row>
+                            </box>
+                            <box data-href="#/browse/">
+                                <row>
+                                    <ico>
+                                        <n class="-ggs-150pct gg-layout-grid"></n>
+                                    </ico>
+                                    <text>Browse</text>
+                                </row>
+                            </box>
+                            <box data-href="#/library/">
+                                <row>
+                                    <ico>
+                                        <n class="gg-feed"></n>
+                                    </ico>
+                                    <text>Library</text>
+                                </row>
+                            </box>
+                        </section>
+                    </card>
+                    <card class="display-none line-height-50px padding-20px">
+                        <section>
+                            <box>
+                                <row>
+                                    <ico>
+                                        <n class="gg-play-list"></n>
+                                    </ico>
+                                    <text>Playlists</text>
+                                </row>
+                            </box>
+                            <box>
+                                <row>
+                                    <ico>
+                                        <n class="gg-heart"></n>
+                                    </ico>
+                                    <text>Favorites</text>
+                                </row>
+                            </box>
+                        </section>
+                    </card>
+                </column>
+            </nav>
+        </header>
+        <main class="-dark-background-color-2c2c2e background-color-d3d3d1 flex-1-1-1px flex-wrap-wrap overflow-x-hidden" data-height="calc(100% - 50px)" data-tablet-height="auto">
+            <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.index.html" data-page="/"></page>
+            <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.album.title.html" data-page="/album/*/"></page>
+            <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.browse.html" data-page="/browse/"></page>
+            <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.library.html" data-page="/library/"></page>
+            <page class="width-100pct" data-active="true" data-fetch="/cdn/html/page/page.search.html" data-page="/search/"></page>
+        </main>
+        <footer class="-tablet-position-fixed background-color-ebebf529 bottom-0 flex-direction-column position-relative width-100pct z-index-5" data-backdrop-blur="10px" id="footer">
+            <row class="justify-content-space-between width-100pct">
+                <card class="-tablet-order-3">
+                    <row>
+                        <box class="width-100pct">
+                            <row class="justify-content-center">
+                                <ico class="-dark-filter-invert-1 -tablet-display-none">
+                                    <svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.4697 5.46967C16.1768 5.76256 16.1768 6.23744 16.4697 6.53033L17.1893 7.25H13.3768C12.706 7.25 12.0942 7.63343 11.8018 8.23713L11.5914 8.67144C11.5381 8.78157 11.5381 8.91006 11.5914 9.02018L12.1603 10.1947C12.2332 10.3451 12.4474 10.3451 12.5203 10.1947L13.1518 8.89102C13.1935 8.80478 13.2809 8.75 13.3768 8.75H17.1893L16.4697 9.46967C16.1768 9.76256 16.1768 10.2374 16.4697 10.5303C16.7626 10.8232 17.2374 10.8232 17.5303 10.5303L19.5303 8.53033C19.8232 8.23744 19.8232 7.76256 19.5303 7.46967L17.5303 5.46967C17.2374 5.17678 16.7626 5.17678 16.4697 5.46967Z" fill="black"/>
+                                        <path d="M10.0336 15.3286C10.0869 15.2184 10.0869 15.0899 10.0336 14.9798L9.46469 13.8053C9.39183 13.6549 9.17755 13.6549 9.10469 13.8053L8.47324 15.109C8.43146 15.1952 8.34407 15.25 8.24824 15.25H5C4.58579 15.25 4.25 15.5858 4.25 16C4.25 16.4142 4.58579 16.75 5 16.75H8.24824C8.91903 16.75 9.53079 16.3666 9.82321 15.7629L10.0336 15.3286Z" fill="black"/>
+                                        <path d="M16.4697 18.5303C16.1768 18.2374 16.1768 17.7626 16.4697 17.4697L17.1893 16.75H13.3768C12.706 16.75 12.0942 16.3666 11.8018 15.7629L8.47324 8.89102C8.43146 8.80478 8.34407 8.75 8.24824 8.75H5C4.58579 8.75 4.25 8.41421 4.25 8C4.25 7.58579 4.58579 7.25 5 7.25H8.24824C8.91903 7.25 9.53079 7.63343 9.82321 8.23713L13.1518 15.109C13.1935 15.1952 13.2809 15.25 13.3768 15.25H17.1893L16.4697 14.5303C16.1768 14.2374 16.1768 13.7626 16.4697 13.4697C16.7626 13.1768 17.2374 13.1768 17.5303 13.4697L19.5303 15.4697C19.8232 15.7626 19.8232 16.2374 19.5303 16.5303L17.5303 18.5303C17.2374 18.8232 16.7626 18.8232 16.4697 18.5303Z" fill="black"/>
+                                    </svg>
+                                </ico>
+                                <ico class="-tablet-display-none">
+                                    <n class="gg-play-track-prev"></n>
+                                </ico>
+                                <ico>
+                                    <n class="gg-play-button"></n>
+                                </ico>
+                                <ico class="-tablet-display-none">
+                                    <n class="gg-play-track-next"></n>
+                                </ico>
+                                <ico class="-tablet-display-none">
+                                    <n class="gg-repeat"></n>
+                                </ico>
+                            </row>
+                        </box>
+                    </row>
+                </card>
+                <card>
+                    <row>
+                        <box>
+                            <section>
+                                <picture class="background-color-333 display-flex height-50px width-50px"></picture>
+                            </section>
+                        </box>
+                        <box class="font-size-13px justify-content-center padding-left-10px padding-right-10px">
+                            <column>
+                                <text id="player-title" placeholder="Title"></text>
+                                <text id="player-artists" placeholder="Artists"></text>
+                            </column>
+                        </box>
+                    </row>
+                </card>
+                <card class="-tablet-display-none justify-content-center margin-left-auto">
+                    <row>
+                        <label class="margin-10px position-relative">
+                            <span class="background-color-0072bb border-radius-5px bottom-0 height-5px margin-auto position-absolute top-0 width-100pct" id="volume-progressbar"></span>
+                            <input class="-thumb-background-color-fff background-none position-relative" type="range" min="0" max="100" step="1" value="100" id="np-volume" class="volume-slider" oninput="on.input.volume(event.target)" onpropertychange="on.input.volume(event.target)" role="progressbar">
+                        </label>
+                    </row>
+                </card>
+            </row>
+            <row class="-tablet-display-flex border-top-1px-solid border-color-777 display-none text-align-items-center width-100pct">
+                <card class="padding-bottom-10px padding-top-10px width-100pct">
+                    <row class="align-items-center justify-content-space-around width-100pct">
+                        <box class="height-50px justify-content-center width-50px" data-href="/">
+                            <column class="align-items-center justify-content-center">
+                                <ico class="margin-bottom-5px" data-height="20px" data-width="20px">
+                                    <n class="gg-home"></n>
+                                </ico>
+                                <text class="font-size-11px">Home</text>
+                            </column>
+                        </box>
+                        <box class="height-50px justify-content-center width-50px" data-href="#/search/">
+                            <column class="align-items-center justify-content-center">
+                                <ico class="margin-bottom-5px" data-height="20px" data-width="20px">
+                                    <n class="gg-search"></n>
+                                </ico>
+                                <text class="font-size-11px">Search</text>
+                            </column>
+                        </box>
+                        <box class="height-50px justify-content-center width-50px" data-href="#/browse/">
+                            <column class="align-items-center justify-content-center">
+                                <ico class="margin-bottom-5px" data-height="20px" data-width="20px">
+                                    <n class="-ggs-2 gg-layout-grid"></n>
+                                </ico>
+                                <text class="font-size-11px">Browse</text>
+                            </column>
+                        </box>
+                        <box class="height-50px justify-content-center width-50px" data-href="#/library/">
+                            <column class="align-items-center justify-content-center">
+                                <ico class="margin-bottom-5px" data-height="20px" data-width="20px">
+                                    <n class="gg-feed"></n>
+                                </ico>
+                                <text class="font-size-11px">Library</text>
+                            </column>
+                        </box>
+                    </row>
+                </card>
+            </row>
+            <audio id="audio" onended="player.on.ended(event)" onplay="player.on.play(event)">
+                <source></source>
+            </audio>
+        </footer>
+    </body>
+    <script>
+        var pre = global.domains.domain === "github" ? "" : "/";
+        Scripts([{
+            "link": pre + "index.js"
+        }, {
+            "link": pre + "cdn/js/mvc.js"
+        }, {
+            "link": pre + "cdn/js/on.js"
+        }, {
+            "link": pre + "cdn/js/router.js"
+        }, {
+            "link": pre + "cdn/js/vanilla.js"
+        }]);
+        Styles([{
+            "link": pre + "index.css"
+        }, {
+            "link": pre + "cdn/css/gg.css"
+        }]);
+    </script>
+</html>

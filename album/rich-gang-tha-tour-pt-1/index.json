@@ -11,63 +11,83 @@
     },
     "tracks": [
         {
+            "artist": ["Young Thug", "Birdman"],
             "title": "Givenchy"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "War Ready"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "I Know It"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "See You"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Beat It Up"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Flava"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "730"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Hate I"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Tell Em (Lies)"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "I Got"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Milk Marie"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Imma Ride"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Everything I Got"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Keep It Goin"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Bullet"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Freestyle"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Throw Your Hood Up"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Soldier"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Pull Up"
         },
         {
+            "artist": ["Rich Homie Quan"],
             "title": "Who's On Top"
         }
     ]

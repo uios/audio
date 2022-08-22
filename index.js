@@ -84,20 +84,26 @@ window.player.album.play = ()=>{
                 var f = 0;
                 do {
                     const track = feed.children[f];
+                    window.player.queue.album = {
+                        name: byId('album-name').textContent,
+                        uid: byId('album-name').dataset.uid
+                    }
                     window.player.queue.tracks[f] = {
-                        artists: [],
+                        artist: track.find('[placeholder="Artists"]').textContent,
                         filename: track.dataset.filename,
                         source: cdn.endpoint + '/' + uid + '/' + track.dataset.filename + '.mp3',
                         title: track.find('[placeholder="Title"]').textContent
                     };
                     f++;
                 } while (f < feed.children.length);
+
+                const index = 0;
+                window.player.queue.current = index;
+                source.src = window.player.queue.tracks[index].source;
+                dom.audio.load();
+                dom.audio.play();
+
             }
-            const index = 0;
-            window.player.queue.current = index;
-            source.src = window.player.queue.tracks[index].source;
-            dom.audio.load();
-            dom.audio.play();
         }
         target.firstElementChild.classList.add('gg-play-pause');
         target.firstElementChild.classList.remove('gg-play-button');
@@ -120,7 +126,7 @@ window.player.album.track = target=>{
         do {
             const track = feed.children[f];
             window.player.queue.tracks[f] = {
-                artists: [],
+                artist: track.find('[placeholder="Artists"]').textContent,
                 filename: track.dataset.filename,
                 source: cdn.endpoint + '/' + uid + '/' + track.dataset.filename + '.mp3',
                 title: track.find('[placeholder="Title"]').textContent
@@ -162,13 +168,13 @@ window.player.on.ended = event=>{
 
     window.player.queue.current === window.player.queue.tracks.length - 1 ? window.player.queue.current = 0 : window.player.queue.current++;
     console.log(window.player.queue.current);
-    
+
     const source = dom.audio.find('source');
     const index = window.player.queue.current;
     source.src = window.player.queue.tracks[index].source;
     dom.audio.load();
     dom.audio.play();
-    
+
     const track = window.player.queue.tracks[index];
     console.log({
         index,
@@ -204,6 +210,22 @@ window.player.on.play = event=>{
         playing.find('.counter').classList.add('color-0096c7');
         playing.find('[placeholder="Title"]').classList.add('color-0096c7');
     }
+
+    if ('mediaSession'in navigator) {
+        const metadata = {
+            title: track.title,
+            artist: track.artist,
+            album: window.player.queue.album,
+            artwork: [{
+                src: cdn.endpoint + '/' + byId('album-name').dataset.uid + '/front.jpg',
+                sizes: '96x96',
+                type: 'image/png'
+            }]
+        };
+        console.log(metadata);
+        navigator.mediaSession.metadata = new MediaMetadata(metadata);
+    }
+
 }
 
 window.player.queue = {};
