@@ -91,7 +91,7 @@ window.player.album.play = ()=>{
                     window.player.queue.tracks[f] = {
                         artist: track.find('[placeholder="Artists"]').textContent,
                         filename: track.dataset.filename,
-                        source: cdn.endpoint + '/' + uid + '/' + track.dataset.filename + '.mp3',
+                        source: cdn.endpoint + '/albums/' + uid + '/' + track.dataset.filename + '.mp3',
                         title: track.find('[placeholder="Title"]').textContent
                     };
                     f++;
@@ -128,7 +128,7 @@ window.player.album.track = target=>{
             window.player.queue.tracks[f] = {
                 artist: track.find('[placeholder="Artists"]').textContent,
                 filename: track.dataset.filename,
-                source: cdn.endpoint + '/' + uid + '/' + track.dataset.filename + '.mp3',
+                source: cdn.endpoint + '/albums/' + uid + '/' + track.dataset.filename + '.mp3',
                 title: track.find('[placeholder="Title"]').textContent
             };
             f++;
