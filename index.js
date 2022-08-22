@@ -211,6 +211,8 @@ window.player.on.ended = event=>{
     }
 }
 window.player.on.pause = event=>{
+    $(byId('album-play').find('n')).removeClass('gg-play-pause').addClass('gg-play-button');
+    
     $(byId('audio-play').find('n')).removeClass('gg-play-pause').addClass('gg-play-button');
 }
 window.player.on.play = event=>{
@@ -234,6 +236,8 @@ window.player.on.play = event=>{
         playing.find('.counter').classList.add('color-0096c7');
         playing.find('[placeholder="Title"]').classList.add('color-0096c7');
     }
+
+    $(byId('album-play').find('n')).removeClass('gg-play-button').addClass('gg-play-pause');
 
     $(byId('audio-play').find('n')).removeClass('gg-play-button').addClass('gg-play-pause');
 
