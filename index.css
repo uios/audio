@@ -178,6 +178,12 @@
     .align-items-flex-end {
         align-items: flex-end;
     }
+
+    @media (max-width: 960px) {
+        .-dw960px-align-items-center {
+            align-items: center;
+        }
+    }
 }
 
 /*Blur*/
@@ -197,7 +203,6 @@
         background-color: rgba(0, 0, 0, 0.75);
     }
 }
-
 
 /*BACKGROUND COLOR*/
 @media screen {
@@ -319,7 +324,7 @@
     .border-radius-2px {
         border-radius: 2px;
     }
-    
+
     .border-radius-5px {
         border-radius: 5px;
     }
@@ -341,11 +346,11 @@
     .color-000 {
         color: #000;
     }
-    
+
     .color-0096c7 {
         color: #0096c7;
     }
-    
+
     .color-b3 {
         color: #b3b3b3;
     }
@@ -356,11 +361,11 @@
     .counter:before {
         content: counter(count);
     }
-    
+
     .counter-reset {
         counter-reset: count;
     }
-    
+
     .counter-increment {
         counter-increment: count;
     }
@@ -376,7 +381,7 @@
     .display-grid {
         display: grid;
     }
-    
+
     .display-inline-flex {
         display: inline-flex;
         display: -webkit-inline-flex;
@@ -412,6 +417,12 @@
 @media screen {
     .flex-direction-column {
         flex-direction: column;
+    }
+
+    @media (max-width: 960px) {
+        .-dw960px-flex-direction-column {
+            flex-direction: column;
+        }
     }
 }
 
@@ -478,10 +489,10 @@
     }
 
     @media (max-width: 1600px) {
-    .-uxga-font-size-48px {
-        font-size: 48px;
+        .-uxga-font-size-48px {
+            font-size: 48px;
+        }
     }
-
 }
 
 /*FONT WEIGHT*/
@@ -559,15 +570,15 @@
     .line-height-16px {
         line-height: 16px;
     }
-    
+
     .line-height-24px {
         line-height: 24px;
     }
-    
+
     .line-height-36px {
         line-height: 36px;
     }
-    
+
     .line-height-50px {
         line-height: 50px;
     }
@@ -619,6 +630,10 @@
         margin-right: 30px;
     }
 
+    .margin-top-10px {
+        margin-top: 10px;
+    }
+
     .margin-top-20px {
         margin-top: 20px;
     }
@@ -638,6 +653,10 @@
     }
 
     @media (max-width: 480px) {
+        .-mobile-margin-auto {
+            margin: auto;
+        }
+        
         .-mobile-margin-left-10px {
             margin-left: 10px;
         }
@@ -816,6 +835,16 @@
             padding-top: 80px;
         }
     }
+
+    @media (max-width: 480px) {
+        .-mobile-padding-10px {
+            padding: 10px;
+        }
+        
+        .-mobile-padding-20px {
+            padding: 20px;
+        }
+    }
 }
 
 /*POSITION*/
@@ -952,6 +981,10 @@
     }
 
     @media (max-width: 480px) {
+        .-mobile-width-100pct {
+            width: 100%;
+        }
+        
         [data-mobile-width="calc((100% - 30px)/2.5)"] {
             width: calc((100% - 30px)/2.5);
         }

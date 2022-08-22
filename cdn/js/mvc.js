@@ -31,13 +31,14 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
 
                         byId('album-name').dataset.uid = album.uid;
                         byId('album-name').textContent = album.name;
-                        
+
                         byId('album-play').dataset.uid = uid;
 
                         const tracks = data.tracks;
-                        if(tracks.length > 0) {
+                        if (tracks.length > 0) {
                             var t = 0;
-                            const feed = byId('feed-album-tracks'); console.log(feed);
+                            const feed = byId('feed-album-tracks');
+                            feed.innerHTML = "";
                             const template = byId('template-album-track').content;
                             do {
                                 const track = tracks[t];
@@ -45,9 +46,9 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
                                 elem.dataset.filename = track.title;
                                 elem.find('[placeholder="Title"]').textContent = track.title;
                                 elem.find('[placeholder="Artists"]').textContent = track.artist.join(', ');
-                                feed.insertAdjacentHTML('beforeend',elem.outerHTML);
+                                feed.insertAdjacentHTML('beforeend', elem.outerHTML);
                                 t++;
-                            } while(t < tracks.length)                            
+                            } while (t < tracks.length)
                         }
                     }
                     const b = function(error) {
