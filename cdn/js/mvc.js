@@ -25,12 +25,14 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
                     const a = async function(d) {
                         const data = JSON.parse(d);
                         const album = data.album;
+                        const shortname = album.shortname;
                         const uid = album.uid;
 
-                        byId('album-cover').src = cdn.endpoint + "/albums/" + uid + "/front.jpg";
+                        byId('album-cover').src = cdn.endpoint + "/album/" + shortname + "/front.jpg";
 
                         byId('album-name').dataset.uid = album.uid;
                         byId('album-name').textContent = album.name;
+                        byId('album-name').dataset.shortname = shortname;
 
                         byId('album-play').dataset.uid = uid;
 

@@ -1,0 +1,56 @@
+{
+    "album": {
+        "artists": [
+            "Rick Ross"
+        ],
+        "name": "Ashes To Ashes",
+        "shortname": "ashes-to-ashes",
+        "uid": "8f42f227-6ed1-45b6-9fee-5b24921cbc63"
+    },
+    "tracks": [
+        {
+            "artist": ["Rick Ross"],
+            "title": "Intro"
+        },
+        {
+            "artist": ["Rick Ross", "T.I."],
+            "title": "9 Piece"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "title": "John Doe"
+        },
+        {
+            "artist": ["Rick Ross", "Ludacris"],
+            "title": "Black Mans Dream"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "title": "Retrosuperfuture"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "title": "Play Your Part"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "title": "Ashes To Ashes"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "title": "Even Deeper"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "title": "She Crazy"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "title": "10 Bricks"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "title": "Another One"
+        }
+    ]
+}

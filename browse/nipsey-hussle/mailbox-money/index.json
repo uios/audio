@@ -1,0 +1,72 @@
+{
+    "album": {
+        "artists": [
+            "Nipsey Hussle"
+        ],
+        "name": "Mailbox Money",
+        "shortname": "mailbox-money",
+        "uid": "f5e66f1f-dc50-472a-8975-c997190b9fc1"
+    },
+    "tracks": [
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Killa"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "A Hunnit A Show"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Status Symbol"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "That's How I Knew"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Count Up That Loot"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Only A Case"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Where Yo Money At"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Between Us"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Real Nigga Moves"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Stay Loyal"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "A Miracle"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "No Nigga Like Me"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "50 Niggaz"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Be Here For A While"
+        },
+        {
+            "artist": ["Nipsey Hussle"],
+            "title": "Overtime"
+        }
+    ]
+}

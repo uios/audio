@@ -76,6 +76,7 @@ window.player.album.play = ()=>{
         const uid = target.dataset.uid;
         const source = dom.audio.find('source');
         const src = source.src;
+        const shortname = byId('album-name').dataset.shortname;
         if (src) {
             dom.audio.play();
         } else {
@@ -91,7 +92,7 @@ window.player.album.play = ()=>{
                     window.player.queue.tracks[f] = {
                         artist: track.find('[placeholder="Artists"]').textContent,
                         filename: track.dataset.filename,
-                        source: cdn.endpoint + '/albums/' + uid + '/' + track.dataset.filename + '.mp3',
+                        source: cdn.endpoint + '/album/' + shortname + '/' + track.dataset.filename + '.mp3',
                         title: track.find('[placeholder="Title"]').textContent
                     };
                     f++;
@@ -116,7 +117,8 @@ window.player.album.play = ()=>{
 window.player.album.track = target=>{
     const card = target.closest('card');
     const play = byId('album-play');
-    const uid = byId('album-play').dataset.uid;
+    const uid = play.dataset.uid;
+    const shortname = byId('album-name').dataset.shortname;
     const source = dom.audio.find('source');
     const src = source.src;
 
@@ -128,7 +130,7 @@ window.player.album.track = target=>{
             window.player.queue.tracks[f] = {
                 artist: track.find('[placeholder="Artists"]').textContent,
                 filename: track.dataset.filename,
-                source: cdn.endpoint + '/albums/' + uid + '/' + track.dataset.filename + '.mp3',
+                source: cdn.endpoint + '/album/' + shortname + '/' + track.dataset.filename + '.mp3',
                 title: track.find('[placeholder="Title"]').textContent
             };
             f++;
@@ -247,7 +249,7 @@ window.player.on.play = event=>{
             artist: track.artist,
             album: window.player.queue.album,
             artwork: [{
-                src: cdn.endpoint + '/albums/' + byId('album-name').dataset.uid + '/front.jpg',
+                src: cdn.endpoint + '/album/' + byId('album-name').dataset.shortname + '/front.jpg',
                 sizes: '96x96',
                 type: 'image/png'
             }]
