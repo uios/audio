@@ -1,0 +1,112 @@
+{
+    "album": {
+        "artists": [
+            "Rick Ross"
+        ],
+        "name": "Rich Forever",
+        "shortname": "rich-forever",
+        "uid": "24896f46-7632-4e9d-a75b-599e7359e259"
+    },
+    "tracks": [
+        {
+            "artist": ["Rick Ross"],
+            "length": "1:21",
+            "title": "Holy Ghost"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "3:07",
+            "title": "High Definition"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "4:23",
+            "title": "MMG Untouchble"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "2:46",
+            "title": "Yella Diamonds"
+        },
+        {
+            "artist": ["Rick Ross", "2 Chainz", "Wale"],
+            "length": "2:42",
+            "title": "F ck Em"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "3:33",
+            "title": "London Skit"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "4:42",
+            "title": "Rich Forever"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "2:55",
+            "title": "Triple Beam Dreams"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "1:22",
+            "title": "Mine Games"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "3:55",
+            "title": "New Bugatti"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "1:21",
+            "title": "Keys To The Crib"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "3:07",
+            "title": "Last Breath"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "4:23",
+            "title": "I Swear To God"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "2:46",
+            "title": "Off The Boat"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "2:42",
+            "title": "King Of Diamonds"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "3:33",
+            "title": "Ring Ring"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "4:42",
+            "title": "MMG The World Is Ours"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "2:55",
+            "title": "Party Heart"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "1:22",
+            "title": "Stay Schemin"
+        },
+        {
+            "artist": ["Rick Ross"],
+            "length": "3:55",
+            "title": "Shaheem Reid Speaks"
+        }
+    ]
+}
