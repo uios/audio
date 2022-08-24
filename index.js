@@ -73,7 +73,6 @@ window.player.album.play = ()=>{
     const target = byId('album-play');
     console.log(target);
     if (dom.audio.paused) {
-        const uid = target.dataset.uid;
         const source = dom.audio.find('source');
         const src = source.src;
         const shortname = byId('album-name').dataset.shortname;
@@ -86,8 +85,7 @@ window.player.album.play = ()=>{
                 do {
                     const track = feed.children[f];
                     window.player.queue.album = {
-                        name: byId('album-name').textContent,
-                        uid: byId('album-name').dataset.uid
+                        name: byId('album-name').textContent
                     }
                     window.player.queue.tracks[f] = {
                         artist: track.find('[placeholder="Artists"]').textContent,
@@ -117,7 +115,6 @@ window.player.album.play = ()=>{
 window.player.album.track = target=>{
     const card = target.closest('card');
     const play = byId('album-play');
-    const uid = play.dataset.uid;
     const shortname = byId('album-name').dataset.shortname;
     const source = dom.audio.find('source');
     const src = source.src;

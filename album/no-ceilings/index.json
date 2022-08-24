@@ -1,0 +1,116 @@
+{
+    "album": {
+        "artists": [
+            "Lil Wayne"
+        ],
+        "name": "No Ceilings",
+        "shortname": "no-ceilings"
+    },
+    "tracks": [
+        {
+            "artist": ["Lil Wayne"],
+            "length": "1:21",
+            "title": "Swag Surf"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:07",
+            "title": "Ice Cream"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "4:23",
+            "title": "DOA"
+        },
+        {
+            "artist": ["Gudda Gudda"],
+            "length": "2:46",
+            "title": "Skit"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "2:42",
+            "title": "Wasted"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:33",
+            "title": "Watch My Shoes"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "4:42",
+            "title": "Break Up"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "2:55",
+            "title": "Banned From TV"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "1:22",
+            "title": "Throw It In The Bag"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "Thats All I Have"
+        },
+        {
+            "artist": ["Shanell"],
+            "length": "3:55",
+            "title": "Skit"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "Wayne On Me"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "Im Good"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "Poke Her Face"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "Run This Town"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "I Got No Ceilings"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "Skit End"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "No Ceilings"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "Oh Lets Do It"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "Single"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "length": "3:55",
+            "title": "Sweet Dreams"
+        }
+    ]
+}
