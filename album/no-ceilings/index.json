@@ -9,106 +9,127 @@
     "tracks": [
         {
             "artist": ["Lil Wayne"],
+            "title": "Swag Surf",
             "length": "1:21",
             "title": "Swag Surf"
         },
         {
             "artist": ["Lil Wayne"],
+            "title": "Ice Cream",
             "length": "3:07",
             "title": "Ice Cream"
         },
         {
             "artist": ["Lil Wayne"],
+            "title": "DOA",
             "length": "4:23",
             "title": "DOA"
         },
         {
-            "artist": ["Gudda Gudda"],
+            "artist": ["Lil Wayne", "Gudda Gudda"],
+            "title": "Skit (Feat Gudda Gudda)",
             "length": "2:46",
-            "title": "Skit"
+            "title": "Skit (Feat Gudda Gudda)"
         },
         {
             "artist": ["Lil Wayne"],
+            "title": "Wasted",
             "length": "2:42",
             "title": "Wasted"
         },
         {
             "artist": ["Lil Wayne"],
+            "title": "Watch My Shoes",
             "length": "3:33",
             "title": "Watch My Shoes"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Break Up",
             "length": "4:42",
             "title": "Break Up"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Banned From TV",
             "length": "2:55",
             "title": "Banned From TV"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Throw It In The Bag",
             "length": "1:22",
             "title": "Throw It In The Bag"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Thats All I Have",
             "length": "3:55",
             "title": "Thats All I Have"
         },
         {
             "artist": ["Shanell"],
+            "filename": "Skit (Feat Shanell)",
             "length": "3:55",
-            "title": "Skit"
+            "title": "Skit (Feat Shanell)"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Wayne On Me",
             "length": "3:55",
             "title": "Wayne On Me"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Im Good",
             "length": "3:55",
             "title": "Im Good"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Poke Her Face",
             "length": "3:55",
             "title": "Poke Her Face"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Run This Town",
             "length": "3:55",
             "title": "Run This Town"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "I Got No Ceilings",
             "length": "3:55",
             "title": "I Got No Ceilings"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Skit End",
             "length": "3:55",
             "title": "Skit End"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "No Ceilings",
             "length": "3:55",
             "title": "No Ceilings"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Oh Lets Do It",
             "length": "3:55",
             "title": "Oh Lets Do It"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Single",
             "length": "3:55",
             "title": "Single"
         },
         {
             "artist": ["Lil Wayne"],
+            "filename": "Sweet Dreams",
             "length": "3:55",
             "title": "Sweet Dreams"
         }
