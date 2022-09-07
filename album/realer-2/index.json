@@ -1,0 +1,86 @@
+{
+    "album": {
+        "artists": [
+            "NBA Youngboy"
+        ],
+        "name": "Realer 2",
+        "shortname": "realer-2"
+    },
+    "tracks": [
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "1:21",
+            "title": "Put It On Me"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "3:07",
+            "title": "Boot Up"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "4:23",
+            "title": "Dangerous Love"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "2:46",
+            "title": "Bloody Night"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "2:42",
+            "title": "I Don't Like It"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "3:33",
+            "title": "Tell Me"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "4:42",
+            "title": "Shotta Soul"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "2:55",
+            "title": "Fresh Prince Of Utah"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "1:22",
+            "title": "Never Lie"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "3:55",
+            "title": "DentHead"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "3:33",
+            "title": "Poppin Shit"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "4:42",
+            "title": "I'm The One"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "2:55",
+            "title": "Survive"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "1:22",
+            "title": "You Know"
+        },
+        {
+            "artist": ["NBA Youngboy"],
+            "length": "3:55",
+            "title": "Purge Me"
+        }
+    ]
+}
