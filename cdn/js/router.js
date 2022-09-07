@@ -2,7 +2,7 @@ String.prototype.router = async function(params) {
     var uri = this.toString();
     
     var url = new URL(uri,location.origin); console.log(url);
-    var route = window.route = rout.e(url.hash ? url.hash.split('#')[1] : url.pathname + url.search + url.hash);
+    var route = window.route = rout.e(url.hash ? url.hash.split('#')[1] : url.pathname + url.search + url.hash); console.log(route);
 
     var pages = dom.body.find('pages[data-pages="' + route.root + '"]');
     var page = dom.body.find('page[data-page="' + route.page + '"]');
