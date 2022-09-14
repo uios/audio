@@ -10,6 +10,18 @@ Array.prototype.attr = function(attr, name) {
     }
     return that;
 }
+Array.prototype.remove = function(name) {
+    var that = this;
+    var vals = Object.values(that);
+    if (vals.length > 0) {
+        for (var i = vals.length; i--; ) {
+            this[i].remove();
+        }
+    } else {
+        that[0] ? that[0].remove() : null;
+    }
+    return that;
+}
 Array.prototype.removeAttr = function(name) {
     var that = this;
     if (that.length > 1) {
