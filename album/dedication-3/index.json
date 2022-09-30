@@ -1,0 +1,104 @@
+{
+    "album": {
+        "artists": [
+            "Lil Wayne"
+        ],
+        "name": "Dedication 3",
+        "shortname": "dedication-3",
+        "uid": "a3389039-ddbf-4d29-b9c7-5e32053f35bd"
+    },
+    "tracks": [
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Welcome Back"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Dedication 3"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "What Else Is There To Do"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Thingy Pleaser"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Aint I"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "You Love Me You Hate Me"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Bang Bang"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "The Other Side"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "My Weezy"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "A Dedication"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Shes A Ryder"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Still I Rise"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Magic"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Dos And Donts Of Young Money"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Whoever You Like"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "That Was Easy"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Get Bizzy"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "I Goth That Gangsta"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "A Message To The Djs"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Stuntin"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Dedicated"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Put On"
+        },
+        {
+            "artist": ["Lil Wayne"],
+            "title": "Outro"
+        }
+    ]
+}

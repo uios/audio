@@ -1,8 +1,10 @@
 String.prototype.router = async function(params) {
     var uri = this.toString();
-    
-    var url = new URL(uri,location.origin); console.log(url);
-    var route = window.route = rout.e(url.hash ? url.hash.split('#')[1] : url.pathname + url.search + url.hash); console.log(route);
+
+    var url = new URL(uri,location.origin);
+    console.log(url);
+    var route = window.route = rout.e(url.hash ? url.hash.split('#')[1] : url.pathname + url.search + url.hash);
+    console.log(route);
 
     var pages = dom.body.find('pages[data-pages="' + route.root + '"]');
     var page = dom.body.find('page[data-page="' + route.page + '"]');
@@ -24,13 +26,24 @@ String.prototype.router = async function(params) {
 
             if (!pop && !["blob:"].includes(window.location.protocol)) {
                 const hash = global.domains.domain === "github" ? "/#" : "";
-                var goto = window.global.domains.subdomain === "uios" ? '/audio' : '';
+                var goto = window.global.domains.subdomain === "uios" ? '/' + document.head.querySelector('[name="application-shortname"]').content : '';
                 const link = hash.length > 0 ? goto + hash + (route.hash.length > 0 ? route.hash.split('#')[1] : route.path) + route.search : goto + route.path + route.search + route.hash;
+                if (window.self !== window.top) {
+                    if (window.globals.domains.domain === "github") {
+                        const got = window.parent.GET.slice(0, 3);
+                        const gut = route.GOT;
+                        const bash = got.concat(gut);
+                        const goin = (window.globals.domains.domain === "github" ? '/#' : '') + rout.ed.url(bash);
+                        window.parent.history.pushState(goin, '', goin);
+                    }
+                }
+                document.body.dataset.path = route.path;
                 console.log({
+                    path,
                     hash,
                     route,
                     link
-                }, route.hash.split('#')[1]);
+                });
                 history.pushState(link, '', link);
             }
 

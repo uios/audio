@@ -1,60 +1,36 @@
 <html>
     <head>
         <title>Audio &#8226;&#160;uiOS</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
+        <meta name='viewport' content='width=device-width,initial-scale=1.0,maximum-scale=1.0'>
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name='apple-mobile-web-app-status-bar-style' content='#021025'>
+        <meta name="apple-mobile-web-app-title" content="Audio">
+        <meta name="application-name" content="Audio">
+        <meta name="application-shortname" content="audio">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name='theme-color' content='#021025'>
         <script>
             var domains = window.location.host.split('.');
-            window.global = {
+            window.globals = {
                 domains: {
                     domain: domains.length > 1 ? domains[domains.length - 2] : null,
                     subdomain: domains.length > 2 ? domains[domains.length - 3] : null,
                     tld: domains[domains.length - 1]
                 }
             }
-            function Scripts(links) {
-                var f = 0;
-                do {
-                    var l = links[f];
-                    if (l) {
-                        var link = ``;
-                        var script = document.createElement("script");
-                        script.type = "text/javascript";
-                        if (l.link) {
-                            link += (link.includes('https:') ? `` : (link.charAt(0) !== "." && window.location.protocol === "file:" ? `.` : ``));
-                            link += l.link;
-                        } else {
-                            link += (link.includes('https:') ? `` : (link.charAt(0) !== "." && window.location.protocol === "file:" ? `.` : ``));
-                            link += l.cdn;
-                        }
-                        script.src = link;
-                        l && l.async ? script.async = true : null;
-                        document.head.appendChild(script);
-                    }
-                    f++;
-                } while (f < links.length);
-            }
-            function Styles(links) {
-                var f = 0;
-                do {
-                    var l = links[f].link;
-                    var cdn = links[f].link;
-                    var sync = links[f].async;
-                    var link = ``;
-                    link += (l.includes('https:') ? `` : (l.charAt(0) !== "." && window.location.protocol === "file:" ? `.` : ``));
-                    link += links[f].link;
-                    var sync = links[f].sync ? links[f].sync : ``;
-                    var script = ``;
-                    if (link.includes('.css')) {
-                        script = `<link rel="stylesheet" href="` + link + `" ` + sync + `>`;
-                    }
-                    if (link.includes('.js')) {
-                        script = `<script src="` + link + `" ` + sync + `>` + atob('PC9zY3JpcHQ+');
-                    }
-                    document.head.insertAdjacentHTML('beforeend', script);
-                    f++;
-                } while (f < links.length);
-            }
+            const base = document.createElement("base");
+            base.href = (globals.domains.domain === "github" ? "/" + document.head.querySelector('[name="application-shortname"]').content : "") + "/";
+            document.head.appendChild(base);
         </script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link href="index.css" rel="stylesheet">
+        <link href="cdn/css/gg.css" rel="stylesheet">
+        <script id="script-vanilla" src="cdn/js/vanilla.js"></script>
+        <script id="script-mvc" src="cdn/js/mvc.js"></script>
+        <script id="script-on" src="cdn/js/on.js"></script>
+        <script id="script-router" src="cdn/js/router.js"></script>
+        <script src="index.js"></script>
     </head>
     <body class="-dark-background-color-1f background-color-fff display-flex flex-direction-row flex-wrap-wrap" data-theme="system">
         <boot id="boot"></boot>
