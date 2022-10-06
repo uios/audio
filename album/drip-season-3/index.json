@@ -1,0 +1,68 @@
+{
+    "album": {
+        "artists": [
+            "Gunna"
+        ],
+        "name": "Drip Season 3",
+        "shortname": "drip-season-3",
+        "uid": "a3389039-ddbf-4d29-b9c7-5e32053f35bd"
+    },
+    "tracks": [
+        {
+            "artist": ["Gunna"],
+            "title": "Helluva Price"
+        },
+        {
+            "artist": ["Gunna"],
+            "title": "Drippin'"
+        },
+        {
+            "artist": ["Gunna", "Hoodrich Pablo Juan"],
+            "title": "Almighty"
+        },
+        {
+            "artist": ["Gunna"],
+            "title": "Top Off"
+        },
+        {
+            "artist": ["Gunna"],
+            "title": "Pedestrian"
+        },
+        {
+            "artist": ["Gunna", "Lil Durk"],
+            "title": "Lies About You"
+        },
+        {
+            "artist": ["Gunna"],
+            "title": "Mistress"
+        },
+        {
+            "artist": ["Gunna", "NAV"],
+            "title": "Car Sick"
+        },
+        {
+            "artist": ["Gunna"],
+            "title": "My Soul"
+        },
+        {
+            "artist": ["Gunna"],
+            "title": "No Joke"
+        },
+        {
+            "artist": ["Gunna"],
+            "title": "Spending Addiction"
+        },
+        {
+            "artist": ["Gunna"],
+            "title": "Money Don't Change You"
+        },
+        {
+            "artist": ["Gunna"],
+            "title": "Toast Up"
+        },
+        {
+            "artist": ["Gunna", "Lil Yachty"],
+            "title": "Drip or Drown (Remix)"
+        }
+    ]
+}
