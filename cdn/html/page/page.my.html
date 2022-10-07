@@ -1,0 +1,55 @@
+<blocks class="min-height-100vh" data-backdrop-blur="10px">
+    <block class="-noauth height-100pct">
+        <section class="padding-y-50px max-height-100pct-minus-120px">
+            <card>
+                <picture></picture>
+                <form class="border-radius-20px direction-column flex-unset font-size-13px margin-x-auto noauth padding-y-10px width-300px" id="my-login" onsubmit="controller.my.login(event)">
+                    <box class="background-color-fff border-radius-5px margin-bottom-10px box-shadow-0-1px-6px-0 width-100pct">
+                        <section>
+                            <input class="line-height-36px padding-x-10px width-100pct" placeholder="Email" type="text">
+                        </section>
+                    </box>
+                    <box class="background-color-fff border-radius-5px margin-bottom-10px box-shadow-0-1px-6px-0 width-100pct">
+                        <section class="flex-direction-row flex">
+                            <input class="flex-1 line-height-36px padding-x-10px" placeholder="Password" type="password">
+                            <input class="height-36px invert ui-bg-key width-36px" type="submit">
+                        </section>
+                    </box>
+                    <box class="width-100pct">
+                        <row>
+                            <span class="background-color-fff border-radius-5px display-inline-flex box-shadow-0-1px-6px-0 width-50pct">
+                                <ico class="position-absolute left-0 invert" data-height="36px" data-width="36px">
+                                    <n class="ui-bg-google"></n>
+                                </ico>
+                                <text class="flex-1 line-height-36px text-align-center" data-submit="my-login">Log In</text>
+                                <input type="submit">
+                            </span>
+                            <span class="background-color-fff border-radius-5px color-000 display-inline-flex margin-left-10px box-shadow-0-1px-6px-0 width-50pct" data-href="/my/account/">
+                                <ico class="position-absolute height-36px left-0 width-36px" data-height="36px" data-width="36px">
+                                    <n class="ui-bg-email"></n>
+                                </ico>
+                                <text class="flex-1 line-height-36px text-align-center">Sign Up</text>
+                            </span>
+                        </row>
+                    </box>
+                    <box class="background-color-fff border-radius-5px color-000 margin-top-36px box-shadow-0-1px-6px-0 width-100pct" data-href="/">
+                        <section>
+                            <ico class="position-absolute height-36px left-0 width-36px" data-height="36px" data-width="36px">
+                                <n class="ui-bg-email"></n>
+                            </ico>
+                            <text class="flex-1 line-height-36px text-align-center">Continue as Guest</text>
+                        </section>
+                    </box>
+                    <box class="padding--10px width-100pct" data-href="/my/account/password/">
+                        <section>
+                            <ico class="position-absolute height-50px invert left-0 width-36px" data-height="50px" data-width="36px">
+                                <n class="ui-bg-incognito"></n>
+                            </ico>
+                            <text class="flex-1 line-height-50px text-align-center">Forgot Password?</text>
+                        </section>
+                    </box>
+                </form>
+            </card>
+        </section>
+    </block>
+</blocks>

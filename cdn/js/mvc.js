@@ -73,6 +73,8 @@ window.mvc.v ? null : window.mvc.v = view = function(route) {
                 resolve(route);
             } else if (root === "library") {
                 resolve(route);
+            } else if (root === "my") {
+                resolve(route);
             } else if (root === "search") {
                 resolve(route);
             } else {
