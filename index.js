@@ -148,14 +148,14 @@ window.player.album.track = target=>{
 window.player.controls = {};
 window.player.controls.prev = ()=>{
     console.log(event, window.player.queue.tracks);
-    window.player.queue.current === 0 ? window.player.queue.current = window.player.queue.tracks.length-1 : window.player.queue.current--;
+    window.player.queue.current === 0 ? window.player.queue.current = window.player.queue.tracks.length - 1 : window.player.queue.current--;
     console.log(window.player.queue.current);
 
     const source = dom.audio.find('source');
     const index = window.player.queue.current;
     source.src = window.player.queue.tracks[index].source;
     dom.audio.load();
-    dom.audio.play();    
+    dom.audio.play();
 }
 window.player.controls.next = ()=>{
     console.log(event);
@@ -179,6 +179,13 @@ window.player.controls.play = ()=>{
     } else {
         dom.audio.pause();
     }
+}
+window.player.controls.seekto = details=>{
+    if (details.fastSeek && 'fastSeek'in video) {
+        dom.audio.fastSeek(details.seekTime);
+        return;
+    }
+    dom.audio.currentTime = details.seekTime;
 }
 
 window.player.on = {};
@@ -211,7 +218,7 @@ window.player.on.ended = event=>{
 }
 window.player.on.pause = event=>{
     $(byId('album-play').find('n')).removeClass('gg-play-pause').addClass('gg-play-button');
-    
+
     $(byId('audio-play').find('n')).removeClass('gg-play-pause').addClass('gg-play-button');
 }
 window.player.on.play = event=>{
@@ -229,7 +236,7 @@ window.player.on.play = event=>{
     const feed = byId('feed-album-tracks');
     $('.counter.color-0096c7').removeClass('color-0096c7');
     $('[placeholder="Title"].color-0096c7').removeClass('color-0096c7');
-    
+
     const playing = dom.body.find('[data-filename="' + track.filename + '"]');
     if (playing) {
         playing.find('.counter').classList.add('color-0096c7');
@@ -258,6 +265,7 @@ window.player.on.play = event=>{
         navigator.mediaSession.setActionHandler('previoustrack', player.controls.prev);
         navigator.mediaSession.setActionHandler('previoustrack', player.controls.prev);
         navigator.mediaSession.setActionHandler('nexttrack', player.controls.next);
+        navigator.mediaSession.setActionHandler('seekto', player.controls.seekto);
     }
 
 }
